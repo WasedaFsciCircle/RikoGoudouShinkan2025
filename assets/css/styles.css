@@ -1,35 +1,14 @@
-.countdown-timer {
-    margin: 10px 0;
-    color: #ff4444;
-    font-weight: bold;
-    font-size: 1.2em;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
-.social-links {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.social-icon {
-    font-size: 24px;
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.social-icon:hover {
-    color: #666;
-}
-
-.email-link {
-    display: block;
-    margin-top: 10px;
-    color: #333;
-    text-decoration: none;
-}
-
-.email-link:hover {
-    text-decoration: underline;
+.container {
+    max-width: 600px;
 }
