@@ -1,2343 +1,349 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="ja" xml:lang="ja" class="yui3-js-enabled"><head>
-    <title>理工サークル合同新歓</title>
+<html dir="ltr" lang="ja" xml:lang="ja" class="yui3-js-enabled">
+<head>
+    <title>理工サークル合同新歓 - 早稲田うたおう会</title>
+    
+    <!-- ファビコンとメタデータ -->
     <link rel="shortcut icon" href="favicon.ico">
-    <meta name="apple-itunes-app" content="app-id=1553337282, app-argument=https://wsdmoodle.waseda.jp/course/view.php?id=240902"><link rel="manifest" href="https://wsdmoodle.waseda.jp/admin/tool/mobile/mobile.webmanifest.php"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="keywords" content="moodle, コース: Academic Reading 2　月３スズキ | Waseda Moodle">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<script>
-//<![CDATA[
-var M = {}; M.yui = {};
-M.pageloadstarttime = new Date();
-M.cfg = {"wwwroot":"https:\/\/wsdmoodle.waseda.jp","homeurl":{},"sesskey":"TvS5lhFHSc","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1741931123","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1741931123","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","language":"ja","courseId":240902,"courseContextId":5102924,"contextid":5102924,"contextInstanceId":240902,"langrev":1741931123,"templaterev":"1741931123","siteId":1};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
-var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
-if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
-YUI_config = {"debug":false,"base":"https:\/\/wsdmoodle.waseda.jp\/lib\/yuilib\/3.18.1\/","comboBase":"https:\/\/wsdmoodle.waseda.jp\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/wsdmoodle.waseda.jp\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/wsdmoodle.waseda.jp\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/wsdmoodle.waseda.jp\/theme\/yui_combo.php?m\/1741931123\/","combine":true,"comboBase":"https:\/\/wsdmoodle.waseda.jp\/theme\/yui_combo.php?","ext":false,"root":"m\/1741931123\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-event":{"requires":["event-custom"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-core_outcome-simpleio":{"requires":["base","io-base","json-parse","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core_outcome-mapoutcome":{"requires":["widget","handlebars","json-parse","json-stringify","moodle-core_outcome-models","moodle-core_outcome-outcomepanel","moodle-core-notification-exception"]},"moodle-core_outcome-outcomepanel":{"requires":["base","handlebars","moodle-core_outcome-models","moodle-core_outcome-scrollpanel","moodle-core_outcome-ariacontrol","moodle-core_outcome-ariacontrolled","moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core_outcome-simpleio"]},"moodle-core_outcome-scrollpanel":{"requires":["plugin","widget","panel"]},"moodle-core_outcome-models":{"requires":["base","model","model-list","moodle-core_outcome-simpleio","json-stringify"]},"moodle-core_outcome-editoutcome":{"requires":["widget","event-valuechange","handlebars","json-parse","json-stringify","moodle-core_outcome-models","moodle-core-notification-dialogue","moodle-core-notification-exception"]},"moodle-core_outcome-mapoutcomeset":{"requires":["widget","model","model-list","handlebars","json-parse","json-stringify","moodle-core_outcome-models","moodle-core-notification-dialogue","moodle-core-notification-exception","moodle-core-notification-alert","moodle-core_outcome-simpleio"]},"moodle-core_outcome-dynamicpanel":{"requires":["base","moodle-core_outcome-simpleio","classnamemanager","moodle-core-notification-dialogue","moodle-core_outcome-scrollpanel"]},"moodle-core_outcome-ariacontrol":{"requires":["plugin","widget","escape"]},"moodle-core_outcome-ariacontrolled":{"requires":["plugin","widget"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_releasecode-form":{"requires":["base","node","event","event-valuechange","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_hsuforum-livelog":{"requires":["widget"]},"moodle-mod_hsuforum-article":{"requires":["base","node","event","router","core_rating","querystring","moodle-mod_hsuforum-io","moodle-mod_hsuforum-livelog"]},"moodle-mod_hsuforum-io":{"requires":["base","io-base","io-form","io-upload-iframe","json-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form","datatype-date-format"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bsgrid-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_chemistry-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_count-button":{"requires":["io","json-parse","moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_filedragdrop-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_hr-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_htmlplus-beautify":{},"moodle-atto_htmlplus-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_htmlplus-beautify","moodle-atto_htmlplus-codemirror","event-valuechange"]},"moodle-atto_htmlplus-codemirror":{"requires":["moodle-atto_htmlplus-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_imagedragdrop-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_kalturamedia-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_teamsmeeting-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]}}},"gallery":{"name":"gallery","base":"https:\/\/wsdmoodle.waseda.jp\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/wsdmoodle.waseda.jp\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1741931123\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/wsdmoodle.waseda.jp\/lib\/javascript.php\/1741931123\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/wsdmoodle.waseda.jp\/lib\/javascript.php\/1741931123\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}},"logInclude":[],"logExclude":[],"logLevel":null};
-M.yui.loader = {modules: {}};
-
-//]]>
-</script>
-<script>
-//<![CDATA[
-var fabbuttonhtml = "\"<div class=\\\"learningtools-action-info\\\"><div class=\\\"floating-button \\\"><div class=\\\"list-learningtools\\\"><div class=\\\"ltbookmarksinfo\\\" id=\\\"ltbookmarksinfo\\\" data-tool=\\\"bookmarks\\\">\\n    <button type=\\\"submit\\\" id=\\\"ltbookmarks-action\\\" data-hovercolor=\\\"#343a40\\\"\\n    data-fontcolor=\\\"#fff\\\" style=\\\"background:#343a40;\\\">\\n        <i class=\\\"fa fa-bookmark\\\" id=\\\"bookmarks-marked\\\" style=\\\"color:#fff\\\"><\\\/i>\\n        <span class=\\\"fa fa-check\\\"><\\\/span>\\n    <\\\/button>\\n    <p> \\u30d6\\u30c3\\u30af\\u30de\\u30fc\\u30af\\u3092\\u8ffd\\u52a0 <\\\/p>\\n<\\\/div><div class=\\\"ltnoteinfo\\\" id=\\\"ltnoteinfo\\\">\\n        <button type=\\\"submit\\\" id=\\\"ltnote-action\\\" data-hovercolor=\\\"#343a40\\\"\\n        data-fontcolor=\\\"#fff\\\" style=\\\"background:#343a40;\\\">\\n            <i class=\\\"fa fa-pencil\\\" style=\\\"color:#fff\\\"><\\\/i>\\n                <span  class=\\\"\\\"> 0 <\\\/span>\\n        <\\\/button>\\n        <p> \\u30e1\\u30e2\\u3092\\u4f5c\\u6210 <\\\/p>\\n    <\\\/div><div class=\\\"ltoolschedule-info\\\" id=\\\"ltoolschedule-info\\\" data-tool=\\\"schedule\\\">\\n        <button type=\\\"submit\\\" id=\\\"ltoolschedule-action\\\" data-hovercolor=\\\"#343a40\\\"\\n        data-fontcolor=\\\"#fff\\\" style=\\\"background:#343a40;\\\">\\n             <i class=\\\"fa fa-calendar-plus-o\\\" style=\\\"color:#fff\\\"><\\\/i>\\n        <\\\/button>\\n        <p>\\u30ab\\u30ec\\u30f3\\u30c0\\u30fc\\u306b\\u767b\\u9332 <\\\/p>\\n    <\\\/div><\\\/div><button class=\\\"btn btn-primary\\\" id=\\\"tool-action-button\\\" style=\\\"background:#0f6fc5;\\\"><i class=\\\"fa fa-magic\\\" style=\\\"color:#fff;\\\"><\\\/i><\\\/button><div class=\\\"sticky-tools-list\\\"><\\\/div><\\\/div><\\\/div>\"";var pagebookmarks = false;
-//]]>
-</script>
-
-<script>
-window.onload = function () {
-$('.format-topcoll ul li.section').has('.sectionbody ul li.activity').addClass('including-module');
-};
-</script><meta name="robots" content="noindex">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="理工サークル合同新歓, 早稲田大学, うたおう会">
+    <meta name="robots" content="noindex">
+    
+    <!-- スタイルシート -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+    <!-- 外部JavaScriptファイル -->
+    <script src="js/moodle-config.js"></script>
+    <script src="js/navigation.js"></script>
+    
+    <!-- フォントアイコン -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- サイドパネル制御スクリプト -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleDrawerButtons = document.querySelectorAll('[data-toggler="drawers"]');
+        
+        toggleDrawerButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const drawerElement = document.getElementById(targetId);
+                
+                if (drawerElement) {
+                    // ドロワーの表示/非表示を切り替え
+                    if (drawerElement.getAttribute('aria-hidden') === 'true') {
+                        drawerElement.setAttribute('aria-hidden', 'false');
+                        drawerElement.classList.add('show');
+                    } else {
+                        drawerElement.setAttribute('aria-hidden', 'true');
+                        drawerElement.classList.remove('show');
+                    }
+                }
+            });
+        });
+
+        // 画面幅に応じてドロワーを閉じる
+        function handleResize() {
+            const drawers = document.querySelectorAll('[data-close-on-resize="1"]');
+            if (window.innerWidth >= 992) { // デスクトップサイズ
+                drawers.forEach(drawer => {
+                    drawer.setAttribute('aria-hidden', 'true');
+                    drawer.classList.remove('show');
+                });
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+        
+        // セクションの開閉処理
+        function setupToggle(toggleId, contentId) {
+            const toggleElement = document.getElementById(toggleId);
+            const contentElement = document.getElementById(contentId);
+            
+            toggleElement.addEventListener('click', function() {
+                if (contentElement.style.display === 'block') {
+                    contentElement.style.display = 'none';
+                    this.querySelector('.toggle-icon i').className = 'fa fa-chevron-right'; // 横向き矢印に変更
+                } else {
+                    contentElement.style.display = 'block';
+                    this.querySelector('.toggle-icon i').className = 'fa fa-chevron-up';
+                }
+            });
+        }
+        
+        // 3つのセクションに対して開閉機能を設定
+        setupToggle('toggle-section-1', 'section-content-1');
+        setupToggle('toggle-section-2', 'section-content-2');
+        setupToggle('toggle-section-3', 'section-content-3');
+        
+        // デフォルトですべてのセクションを開いておく
+        document.getElementById('section-content-1').style.display = 'block';
+        document.getElementById('toggle-section-1').querySelector('.toggle-icon i').className = 'fa fa-chevron-up';
+        
+        document.getElementById('section-content-2').style.display = 'block';
+        document.getElementById('toggle-section-2').querySelector('.toggle-icon i').className = 'fa fa-chevron-up';
+        
+        document.getElementById('section-content-3').style.display = 'block';
+        document.getElementById('toggle-section-3').querySelector('.toggle-icon i').className = 'fa fa-chevron-up';
+    });
+    </script>
+    
+    <style>
+        .toggle-section {
+            background-color: rgba(226, 226, 242, 1.0);
+            border-radius: 0.7em;
+            padding: 10px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        
+        .toggle-section h3 {
+            color: rgba(0, 0, 0, 1.0);
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .toggle-section:hover {
+            background-color: rgba(238, 238, 255, 1.0);
+        }
+        
+        .section-content {
+            display: none;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 0.7em;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .toggle-icon {
+            margin-right: 10px;
+            width: 20px;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .photo-item {
+            width: 48%;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .photo-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        @media (min-width: 768px) {
+            .photo-item {
+                width: 32%;
+            }
+        }
+        
+        .schedule-list {
+            list-style: none;
+            padding-left: 10px;
+        }
+        
+        .schedule-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .schedule-list li:before {
+            content: "🌸";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-<body id="page-course-view-topcoll" class="format-topcoll limitedwidth path-course path-course-view gecko dir-ltr lang-ja yui-skin-sam yui3-skin-sam wsdmoodle-waseda-jp pagelayout-course course-240902 context-5102924 category-1491 theme uses-drawers jsenabled vsc-initialized local-learningtools" data-new-gr-c-s-check-loaded="8.929.0" data-gr-ext-installed="">
-<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
-<div id="page-wrapper" class="d-print-block">
+<body id="page-my-index" class="limitedwidth format-site path-my gecko dir-ltr lang-ja yui-skin-sam yui3-skin-sam wsdmoodle-waseda-jp pagelayout-mydashboard course-1 context-4238777 theme uses-drawers jsenabled vsc-initialized local-learningtools">
+    <div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+    <div id="page-wrapper" class="d-print-block">
 
-    <div>
-    <a class="sr-only sr-only-focusable" href="#maincontent">メインコンテンツへスキップする</a>
-</div><script src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/javascript.php"></script>
-<script src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/combo"></script><script src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/javascript_002.php"></script>
-
-
-
-    <nav class="navbar fixed-top navbar-light bg-white navbar-expand" aria-label="サイトナビゲーション">
-        <div class="container-fluid">
-            <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-primary" data-disabled-toggle="undefined" data-restore-tooltip-on-blur="true">
-                <span class="navbar-toggler-icon"></span>
-                <span class="sr-only">サイドパネル</span>
-            </button>
-    
-            <a href="https://wsdmoodle.waseda.jp/" class="navbar-brand d-none d-md-flex align-items-center m-0 mr-4 p-0 aabtn">
-    
-                    <img src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/Logo.png" class="logo mr-1" alt="Waseda Moodle">
-            </a>
+        <nav class="navbar fixed-top navbar-light bg-white navbar-expand" aria-label="サイトナビゲーション">
+            <div class="container-fluid">
+                <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-primary">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">サイドパネル</span>
+                </button>
+        
+                <a href="index.html" class="navbar-brand d-none d-md-flex align-items-center m-0 mr-4 p-0 aabtn">
+                        <img src="images/home/RS.jpg" class="logo mr-1" alt="Riko Sinkan">
+                </a>
                 <div class="primary-navigation">
                     <nav class="moremenu navigation observed">
-                        <ul id="moremenu-67d9e91b19148-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
-                                    <li data-key="home" class="nav-item" role="none" data-forceintomoremenu="false">
-                                                <a role="menuitem" class="nav-link  " href="https://wsdmoodle.waseda.jp/" data-disableactive="true" tabindex="0" aria-current="true">
-                                                    Home
-                                                </a>
-                                    </li>
-                                    <li data-key="myhome" class="nav-item" role="none" data-forceintomoremenu="false">
-                                                <a role="menuitem" class="nav-link  " href="https://wsdmoodle.waseda.jp/my/" data-disableactive="true" tabindex="-1">
-                                                    ダッシュボード
-                                                </a>
-                                    </li>
-                                    <li data-key="mycourses" class="nav-item" role="none" data-forceintomoremenu="false">
-                                                <a role="menuitem" class="nav-link  " href="https://wsdmoodle.waseda.jp/my/courses.php" data-disableactive="true" tabindex="-1">
-                                                    マイコース
-                                                </a>
-                                    </li>
-                                    <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
-                                                <a role="menuitem" class="nav-link  " href="https://wsdmoodle.waseda.jp/calendar/view.php?view=month" data-disableactive="true" tabindex="-1">
-                                                    calendar
-                                                </a>
-                                    </li>
-                            <li role="none" class="nav-item dropdown dropdownmoremenu d-none" data-region="morebutton">
-                                <a class="dropdown-toggle nav-link " href="#" id="moremenu-dropdown-67d9e91b19148" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
-                                    さらに
+                        <ul id="moremenu-67d7612384920-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
+                            <li data-key="home" class="nav-item" role="none" data-forceintomoremenu="false">
+                                <a role="menuitem" class="nav-link" href="index.html" data-disableactive="true">
+                                    Home
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown" aria-labelledby="moremenu-dropdown-67d9e91b19148" role="menu">
-                                </ul>
                             </li>
-                            <li role="none" class="nav-item dropdown dropdownmoremenu d-none" data-region="openlmsmenu">
-                                <a class="dropdown-toggle nav-link  local_mrooms_openlms_dropdownmenu" href="#" id="openlmsmenu-dropdown-67d9e91b19148" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
-                                    Open LMS
+                            <li data-key="myhome" class="nav-item" role="none" data-forceintomoremenu="false">
+                                <a role="menuitem" class="nav-link active" href="circle.html" aria-current="true" data-disableactive="true">
+                                    参加サークル紹介
                                 </a>
-                                 <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdownopenlms" aria-labelledby="moremenu-dropdown-67d9e91b19148" role="menu">
-                                </ul>
                             </li>
                         </ul>
                     </nav>
                 </div>
-    
-            <ul class="navbar-nav d-none d-md-flex my-1 px-1">
-                <!-- page_heading_menu -->
-                
-            </ul>
-    
-            <div id="usernavigation" class="navbar-nav ml-auto">
-                <div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="155452" data-region="popover-region">
-    <div class="popover-region-toggle nav-link icon-no-margin" data-region="popover-region-toggle" role="button" aria-controls="popover-region-container-67d9e91b1df4367d9e91b0514e3" aria-haspopup="true" aria-label="  10 件の新しい通知のある通知ウィンドウを表示する  " tabindex="0">
-                <i class="icon fa fa-bell-o fa-fw " title="通知メニューに切り替える" role="img" aria-label="通知メニューに切り替える"></i>
-        <div class="count-container " data-region="count-container" aria-hidden="true">
-            10
-        </div>
 
-    </div>
-    <div id="popover-region-container-67d9e91b1df4367d9e91b0514e3" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="通知ウィンドウ" role="region">
-        <div class="popover-region-header-container">
-            <h3 class="popover-region-header-text" data-region="popover-region-header-text">通知</h3>
-            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button" href="#" title="すべてを既読にする" data-action="mark-all-read" role="button" aria-label="すべてを既読にする">
-            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true"></i></span>
-            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-sm fa-fw " title="読み込み中" role="img" aria-label="読み込み中"></i></span>
-        </a>
-            <a href="https://wsdmoodle.waseda.jp/message/notificationpreferences.php" title="通知プレファレンス" aria-label="通知プレファレンス">
-                <i class="icon fa fa-cog fa-fw " aria-hidden="true"></i></a>
-</div>
-        </div>
-        <div class="popover-region-content-container" data-region="popover-region-content-container">
-            <div class="popover-region-content" data-region="popover-region-content">
-                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
-        <div class="empty-message" tabindex="0" data-region="empty-message">あなたに通知はありません。</div>
-
-            </div>
-            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-sm fa-fw " title="読み込み中" role="img" aria-label="読み込み中"></i></span>
-        </div>
-                <a class="see-all-link" href="https://wsdmoodle.waseda.jp/message/output/popup/notifications.php">
-                    <div class="popover-region-footer-container">
-                        <div class="popover-region-seeall-text">すべてを表示する</div>
+                <div id="usernavigation" class="navbar-nav ml-auto">
+                    <div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="155452" data-region="popover-region">
                     </div>
+                    <div class="popover-region collapsed" data-region="popover-region-messages">
+                        <span class="sr-only sr-only-focusable" data-region="jumpto" tabindex="-1"></span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <span class="text-muted mr-2">You are currently using guest access</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="drawer drawer-left drawer-primary d-print-none" data-region="fixed-drawer" id="theme_boost-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1" aria-hidden="true">
+            <div class="drawerheader">
+                <button class="btn drawertoggle icon-no-margin" data-toggler="drawers" data-action="closedrawer" data-target="theme_boost-drawers-primary" data-toggle="tooltip" data-placement="right" title="ドロワを閉じる" data-aria-hidden-tab-index="" tabindex="-1">
+                    <i class="icon fa fa-times fa-fw" aria-hidden="true"></i>
+                </button>
+                <a href="index.html">
+                    <img src="images/home/RS.jpg" class="logo py-1" alt="Riko Sinkan">
                 </a>
-    </div>
-</div><div class="popover-region collapsed" data-region="popover-region-messages">
-    <a id="message-drawer-toggle-67d9e91b1fd1b67d9e91b0514e4" class="nav-link popover-region-toggle position-relative icon-no-margin" href="#" role="button">
-        <i class="icon fa fa-comment-o fa-fw " title="メッセージドロワに切り替える" role="img" aria-label="メッセージドロワに切り替える"></i>
-        <div class="count-container hidden" data-region="count-container">
-            <span aria-hidden="true">0</span>
-            <span class="sr-only">0 件の未読会話があります。</span>
+
+                <div class="drawerheadercontent hidden">
+                </div>
+            </div>
+            <div class="drawercontent drag-container" data-usertour="scroller">
+                <div class="list-group">
+                    <a href="index.html" class="list-group-item list-group-item-action" data-aria-hidden-tab-index="" tabindex="-1">
+                        Home
+                    </a>
+                    <a href="circle.html" class="list-group-item list-group-item-action active" aria-current="true" data-aria-hidden-tab-index="" tabindex="-1">
+                        参加サークル紹介
+                    </a>
+                </div>
+            </div>
         </div>
-    </a>
-    <span class="sr-only sr-only-focusable" data-region="jumpto" tabindex="-1"></span></div>
-                <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
-                        <div class="usermenu">
-                                <div class="dropdown show">
-                                    <a href="#" role="button" id="user-menu-toggle" data-toggle="dropdown" aria-label="ユーザメニュー" aria-haspopup="true" aria-controls="user-action-menu" class="btn dropdown-toggle">
-                                        <span class="userbutton">
-                                            <span class="avatars">
-                                                    <span class="avatar current">
-                                                        <span class="userinitials size-35" title="BASHUTSKIY, Dmitriy バシューツキィ　ドミトリィ" aria-label="BASHUTSKIY, Dmitriy バシューツキィ　ドミトリィ" role="img">Bバ</span>
-                                                    </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <div id="user-action-menu" class="dropdown-menu dropdown-menu-right">
-                                        <div id="usermenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
-                                            <div class="carousel-inner">
-                                                <div id="carousel-item-main" class="carousel-item active" role="menu" tabindex="-1" aria-label="ユーザ">
-                                                            <a href="https://wsdmoodle.waseda.jp/user/profile.php" class="dropdown-item" role="menuitem" tabindex="-1">
-                                                                    
-                                                                プロファイル
-                                                            </a>
-                                                        
-                                                            <a href="https://wsdmoodle.waseda.jp/grade/report/overview/index.php" class="dropdown-item" role="menuitem" tabindex="-1">
-                                                                    
-                                                                評定
-                                                            </a>
-                                                        
-                                                            <a href="https://wsdmoodle.waseda.jp/calendar/view.php?view=month" class="dropdown-item" role="menuitem" tabindex="-1">
-                                                                    
-                                                                カレンダー
-                                                            </a>
-                                                        
-                                                            <a href="https://wsdmoodle.waseda.jp/message/index.php" class="dropdown-item" role="menuitem" tabindex="-1">
-                                                                    
-                                                                メッセージ
-                                                            </a>
-                                                        
-                                                            <a href="https://wsdmoodle.waseda.jp/user/language.php" class="dropdown-item" role="menuitem" tabindex="-1">
-                                                                    
-                                                                言語設定
-                                                            </a>
-                                                        
-                                                            <a href="https://wsdmoodle.waseda.jp/course/management.php" class="dropdown-item" role="menuitem" tabindex="-1">
-                                                                    
-                                                                カテゴリ
-                                                            </a>
-                                                        
-                                                            <a href="https://wsdmoodle.waseda.jp/local/learningtools/ltool/bookmarks/list.php" class="dropdown-item" role="menuitem" tabindex="-1">
-                                                                    
-                                                                ブックマーク
-                                                            </a>
-                                                        
-                                                            <a href="https://wsdmoodle.waseda.jp/local/learningtools/ltool/note/list.php" class="dropdown-item" role="menuitem" tabindex="-1">
-                                                                    
-                                                                メモ
-                                                            </a>
-                                                        
-                                                            <a href="https://wsdmoodle.waseda.jp/user/files.php" class="dropdown-item" role="menuitem" tabindex="-1">
-                                                                    
-                                                                プライベートファイル
-                                                            </a>
-                                                        
-                                                            <a href="https://wsdmoodle.waseda.jp/reportbuilder/index.php" class="dropdown-item" role="menuitem" tabindex="-1">
-                                                                    
-                                                                レポート
-                                                            </a>
-                                                        
-                                                        <div class="dropdown-divider"></div>
-                                                            <a href="https://wsdmoodle.waseda.jp/user/preferences.php" class="dropdown-item" role="menuitem" tabindex="-1">
-                                                                    
-                                                                プレファレンス
-                                                            </a>
-                                                        
-                                                            <a href="#" class="carousel-navigation-link dropdown-item" role="menuitem" tabindex="-1" data-carousel-target-id="carousel-item-67d9e91b1b37f">
-                                                                    
-                                                                言語設定
-                                                            </a>
-                                                        <div class="dropdown-divider"></div>
-                                                            <a href="https://wsdmoodle.waseda.jp/login/logout.php?sesskey=TvS5lhFHSc" class="dropdown-item" role="menuitem" tabindex="-1">
-                                                                    
-                                                                ログアウト
-                                                            </a>
-                                                        
-                                                </div>
-                                                    <div id="carousel-item-67d9e91b1b37f" role="menu" class="carousel-item submenu" tabindex="-1" aria-label="言語セレクタ">
-                                                        <div class="d-flex flex-column h-100">
-                                                            <div class="header">
-                                                                <button type="button" class="btn btn-icon carousel-navigation-link text-decoration-none text-body" data-carousel-target-id="carousel-item-main" aria-label="ユーザメニューに戻る">
-                                                                    <span class="dir-rtl-hide"><img class="icon " alt="" aria-hidden="true" src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/arrow-left.svg"></span>
-                                                                    <span class="dir-ltr-hide"><img class="icon " alt="" aria-hidden="true" src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/arrow-right.svg"></span>
-                                                                </button>
-                                                                <span class="pl-2" id="carousel-item-title-67d9e91b1b37f">言語セレクタ</span>
-                                                            </div>
-                                                            <div class="dropdown-divider"></div>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                        </div>
+
+        <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers drag-container">
+            <div id="topofscroll" class="main-inner">
+                <div class="drawer-toggles d-flex">
+                </div>
+                <header id="page-header" class="header-maxwidth d-print-none">
+                    <div class="w-100">
+                        <div class="d-flex flex-wrap">
+                            <div class="ml-auto d-flex">
+                            </div>
+                            <div id="course-header">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="mr-auto">
+                                <div class="page-context-header d-flex align-items-center mb-2">
+                                    <div class="page-header-headings">
+                                        <h1 class="h2 mb-0">理工サークル合同新歓</h1>
                                     </div>
                                 </div>
-                        </div>
-                </div>
-                
-            </div>
-        </div>
-    </nav>
-    
-
-<div class="drawer drawer-left drawer-primary d-print-none" data-region="fixed-drawer" id="theme_boost-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1" aria-hidden="true">
-    <div class="drawerheader">
-        <button class="btn drawertoggle icon-no-margin hidden" data-toggler="drawers" data-action="closedrawer" data-target="theme_boost-drawers-primary" data-placement="right" title="ドロワを閉じる" data-aria-hidden-tab-index="" tabindex="-1" data-disabled-toggle="tooltip">
-            <i class="icon fa fa-times fa-fw " aria-hidden="true"></i>
-        </button>
-                    <img src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/Logo.png" class="logo py-1 h-100" alt="Waseda Moodle">
-
-        <div class="drawerheadercontent hidden">
-            
-        </div>
-    </div>
-    <div class="drawercontent drag-container" data-usertour="scroller">
-                <div class="list-group">
-                <a href="https://wsdmoodle.waseda.jp/" class="list-group-item list-group-item-action  " data-aria-hidden-tab-index="" tabindex="-1">
-                    Home
-                </a>
-                <a href="https://wsdmoodle.waseda.jp/my/" class="list-group-item list-group-item-action  " data-aria-hidden-tab-index="" tabindex="-1">
-                    ダッシュボード
-                </a>
-                <a href="https://wsdmoodle.waseda.jp/my/courses.php" class="list-group-item list-group-item-action  " data-aria-hidden-tab-index="" tabindex="-1">
-                    マイコース
-                </a>
-                <a href="https://wsdmoodle.waseda.jp/calendar/view.php?view=month" class="list-group-item list-group-item-action  " data-aria-hidden-tab-index="" tabindex="-1">
-                    calendar
-                </a>
-        </div>
-
-    </div>
-</div>
-        <div class="drawer drawer-left d-print-none scrolled" data-region="fixed-drawer" id="theme_boost-drawers-courseindex" data-preference="drawer-open-index" data-state="show-drawer-left" data-forceopen="0" data-close-on-resize="0" aria-hidden="true">
-    <div class="drawerheader">
-        <button class="btn drawertoggle icon-no-margin hidden" data-toggler="drawers" data-action="closedrawer" data-target="theme_boost-drawers-courseindex" data-placement="right" title="コースインデックスを閉じる" data-aria-hidden-tab-index="" tabindex="-1" data-disabled-toggle="tooltip">
-            <i class="icon fa fa-times fa-fw " aria-hidden="true"></i>
-        </button>
-        
-        <div class="drawerheadercontent hidden">
-                            <div id="courseindexdrawercontrols" class="dropdown">
-                    <button class="btn btn-icon rounded-circle mx-2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="コースインデックスオプション" data-aria-hidden-tab-index="" tabindex="-1">
-                        <i class="icon fa fa-ellipsis-v fa-fw m-0" aria-hidden="true"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="#" data-action="expandallcourseindexsections" data-aria-hidden-tab-index="" tabindex="-1">
-                            <i class="icon fa fa-angles-down fa-fw " aria-hidden="true"></i>
-                            すべてを展開する
-                        </a>
-                        <a class="dropdown-item" href="#" data-action="collapseallcourseindexsections" data-aria-hidden-tab-index="" tabindex="-1">
-                            <span class="dir-rtl-hide"><i class="icon fa fa-angles-right fa-fw " aria-hidden="true"></i></span>
-                            <span class="dir-ltr-hide"><i class="icon fa fa-angles-left fa-fw " aria-hidden="true"></i></span>
-                            すべてを折りたたむ
-                        </a>
-                    </div>
-                </div>
-
-        </div>
-    </div>
-    <div class="drawercontent drag-container" data-usertour="scroller">
-                        <nav id="courseindex" class="courseindex">
-    <div id="courseindex-content">
-        <div id="course-index" class="courseindex " role="tree">
-
-
-    <div class="courseindex-section " id="course-index-section-4022735" data-for="section" data-id="4022735" data-number="4" role="treeitem" aria-owns="courseindexcollapse4" tabindex="-1" aria-selected="false">
-        <div class="courseindex-item d-flex
-                
-                
-                courseindex-section-title" id="courseindexsection4" data-for="section_item" tabindex="-1">
-            <a data-toggle="collapse" href="#courseindexcollapse4" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse4" tabindex="-1">
-                <span class="collapsed-icon icon-no-margin mr-1" title="展開する" tabindex="-1">
-                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="sr-only" tabindex="-1">展開する</span>
-                </span>
-                <span class="expanded-icon icon-no-margin mr-1" title="折りたたむ" tabindex="-1">
-                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    <span class="sr-only" tabindex="-1">折りたたむ</span>
-                </span>
-            </a>
-            <a href="https://wsdmoodle.waseda.jp/course/view.php?id=240902#section-4" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
-                Week 4 October 28
-            </a>
-            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
-                ハイライト
-            </span>
-            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-            </span>
-            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-        </div>
-        <div id="courseindexcollapse4" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection4" role="group" tabindex="-1">
-            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="4022735" role="group" tabindex="-1">
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662173" data-for="cm" data-id="4662173" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_complete" data-for="cm_completion" data-value="1">
-        <i class="icon fa fa-circle fa-fw " title="完了" role="img" aria-label="完了"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662173" data-for="cm_name" tabindex="-1">
-                        AWL Quiz 1 sublists 6a-b (4 points)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662174" data-for="cm" data-id="4662174" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4662174" data-for="cm_name" tabindex="-1">
-                        Unit 2.5 Slides from the Lecture
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662175" data-for="cm" data-id="4662175" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/lti/view.php?id=4662175" data-for="cm_name" tabindex="-1">
-                        Unit 2.5 Objective vs. subjective tone (Review)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662176" data-for="cm" data-id="4662176" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662176" data-for="cm_name" tabindex="-1">
-                        Comprehension quiz (Objective vs. subjective tone)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662177" data-for="cm" data-id="4662177" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/lti/view.php?id=4662177" data-for="cm_name" tabindex="-1">
-                        Unit 5.1: Reaction statements (Optional review video)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="courseindex-section " id="course-index-section-4022736" data-for="section" data-id="4022736" data-number="5" role="treeitem" aria-owns="courseindexcollapse5" tabindex="-1" aria-selected="false">
-        <div class="courseindex-item d-flex courseindex-section-title" id="courseindexsection5" data-for="section_item" tabindex="-1">
-            <a data-toggle="collapse" href="#courseindexcollapse5" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse5" tabindex="-1">
-                <span class="collapsed-icon icon-no-margin mr-1" title="展開する" tabindex="-1">
-                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="sr-only" tabindex="-1">展開する</span>
-                </span>
-                <span class="expanded-icon icon-no-margin mr-1" title="折りたたむ" tabindex="-1">
-                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    <span class="sr-only" tabindex="-1">折りたたむ</span>
-                </span>
-            </a>
-            <a href="https://wsdmoodle.waseda.jp/course/view.php?id=240902#section-5" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
-                Week 5 November 11
-            </a>
-            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
-                ハイライト
-            </span>
-            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-            </span>
-            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-        </div>
-        <div id="courseindexcollapse5" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection5" role="group" tabindex="-1">
-            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="4022736" role="group" tabindex="-1">
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662179" data-for="cm" data-id="4662179" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4662179" data-for="cm_name" tabindex="-1">
-                        Unit 3.2 Slides from the Lecture
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662180" data-for="cm" data-id="4662180" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/lti/view.php?id=4662180" data-for="cm_name" tabindex="-1">
-                        Unit 3.2: Outlines (Review)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662181" data-for="cm" data-id="4662181" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662181" data-for="cm_name" tabindex="-1">
-                        Comprehension quiz (outlines)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662182" data-for="cm" data-id="4662182" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_complete" data-for="cm_completion" data-value="1">
-        <i class="icon fa fa-circle fa-fw " title="完了" role="img" aria-label="完了"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/assign/view.php?id=4662182" data-for="cm_name" tabindex="-1">
-                        Extensive Reading Report 1 (9 points)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="courseindex-section " id="course-index-section-4022737" data-for="section" data-id="4022737" data-number="6" role="treeitem" aria-owns="courseindexcollapse6" tabindex="-1" aria-selected="false">
-        <div class="courseindex-item d-flex courseindex-section-title" id="courseindexsection6" data-for="section_item" tabindex="-1">
-            <a data-toggle="collapse" href="#courseindexcollapse6" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse6" tabindex="-1">
-                <span class="collapsed-icon icon-no-margin mr-1" title="展開する" tabindex="-1">
-                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="sr-only" tabindex="-1">展開する</span>
-                </span>
-                <span class="expanded-icon icon-no-margin mr-1" title="折りたたむ" tabindex="-1">
-                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    <span class="sr-only" tabindex="-1">折りたたむ</span>
-                </span>
-            </a>
-            <a href="https://wsdmoodle.waseda.jp/course/view.php?id=240902#section-6" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
-                Week 6 November 18
-            </a>
-            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
-                ハイライト
-            </span>
-            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-            </span>
-            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-        </div>
-        <div id="courseindexcollapse6" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection6" role="group" tabindex="-1">
-            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="4022737" role="group" tabindex="-1">
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662183" data-for="cm" data-id="4662183" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4662183" data-for="cm_name" tabindex="-1">
-                        Unit 3.1 Slides from the Lecture
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662184" data-for="cm" data-id="4662184" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/lti/view.php?id=4662184" data-for="cm_name" tabindex="-1">
-                        Unit 3.1: Skimming and scanning (Review)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662185" data-for="cm" data-id="4662185" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662185" data-for="cm_name" tabindex="-1">
-                        Comprehension quiz (skimming and scanning)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662190" data-for="cm" data-id="4662190" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_complete" data-for="cm_completion" data-value="1">
-        <i class="icon fa fa-circle fa-fw " title="完了" role="img" aria-label="完了"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/assign/view.php?id=4662190" data-for="cm_name" tabindex="-1">
-                        Intensive Reading 2, Parts 2 and 3 (1 point)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662186" data-for="cm" data-id="4662186" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_complete" data-for="cm_completion" data-value="1">
-        <i class="icon fa fa-circle fa-fw " title="完了" role="img" aria-label="完了"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662186" data-for="cm_name" tabindex="-1">
-                        AWL Quiz 2 sublists 7a-b (4 points)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="courseindex-section " id="course-index-section-4022738" data-for="section" data-id="4022738" data-number="7" role="treeitem" aria-owns="courseindexcollapse7" tabindex="-1" aria-selected="false">
-        <div class="courseindex-item d-flex
-                
-                
-                courseindex-section-title" id="courseindexsection7" data-for="section_item" tabindex="-1">
-            <a data-toggle="collapse" href="#courseindexcollapse7" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse7" tabindex="-1">
-                <span class="collapsed-icon icon-no-margin mr-1" title="展開する" tabindex="-1">
-                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="sr-only" tabindex="-1">展開する</span>
-                </span>
-                <span class="expanded-icon icon-no-margin mr-1" title="折りたたむ" tabindex="-1">
-                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    <span class="sr-only" tabindex="-1">折りたたむ</span>
-                </span>
-            </a>
-            <a href="https://wsdmoodle.waseda.jp/course/view.php?id=240902#section-7" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
-                Week 7 November 25
-            </a>
-            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
-                ハイライト
-            </span>
-            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-            </span>
-            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-        </div>
-        <div id="courseindexcollapse7" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection7" role="group" tabindex="-1">
-            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="4022738" role="group" tabindex="-1">
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4766760" data-for="cm" data-id="4766760" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="#module-4766760" data-anchor="true" data-for="cm_name" tabindex="-1">
-                        AR2 Science News Quiz 1 Information
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662187" data-for="cm" data-id="4662187" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4662187" data-for="cm_name" tabindex="-1">
-                        Unit 2.2 (Parts 1-3) Slides from the Lecture
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="courseindex-section " id="course-index-section-4022739" data-for="section" data-id="4022739" data-number="8" role="treeitem" aria-owns="courseindexcollapse8" tabindex="-1" aria-selected="false">
-        <div class="courseindex-item d-flex
-                
-                
-                courseindex-section-title" id="courseindexsection8" data-for="section_item" tabindex="-1">
-            <a data-toggle="collapse" href="#courseindexcollapse8" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse8" tabindex="-1">
-                <span class="collapsed-icon icon-no-margin mr-1" title="展開する" tabindex="-1">
-                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="sr-only" tabindex="-1">展開する</span>
-                </span>
-                <span class="expanded-icon icon-no-margin mr-1" title="折りたたむ" tabindex="-1">
-                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    <span class="sr-only" tabindex="-1">折りたたむ</span>
-                </span>
-            </a>
-            <a href="https://wsdmoodle.waseda.jp/course/view.php?id=240902#section-8" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
-                Week 8 December 2
-            </a>
-            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
-                ハイライト
-            </span>
-            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-            </span>
-            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-        </div>
-        <div id="courseindexcollapse8" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection8" role="group" tabindex="-1">
-            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="4022739" role="group" tabindex="-1">
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662191" data-for="cm" data-id="4662191" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4662191" data-for="cm_name" tabindex="-1">
-                        Unit 2.2 (Parts 4-5) Slides from the Lecture
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662188" data-for="cm" data-id="4662188" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/lti/view.php?id=4662188" data-for="cm_name" tabindex="-1">
-                        Unit 2.2: Cause and effect logical connectors (Review)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662189" data-for="cm" data-id="4662189" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662189" data-for="cm_name" tabindex="-1">
-                        Comprehension quiz (cause and effect connectors)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662196" data-for="cm" data-id="4662196" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_complete" data-for="cm_completion" data-value="1">
-        <i class="icon fa fa-circle fa-fw " title="完了" role="img" aria-label="完了"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/assign/view.php?id=4662196" data-for="cm_name" tabindex="-1">
-                        Intensive Reading 3, Parts 2 and 3 (1 point)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662192" data-for="cm" data-id="4662192" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_complete" data-for="cm_completion" data-value="1">
-        <i class="icon fa fa-circle fa-fw " title="完了" role="img" aria-label="完了"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662192" data-for="cm_name" tabindex="-1">
-                        AWL Quiz 3 sublists 8a-b (4 points)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="courseindex-section " id="course-index-section-4022740" data-for="section" data-id="4022740" data-number="9" role="treeitem" aria-owns="courseindexcollapse9" tabindex="-1" aria-selected="false">
-        <div class="courseindex-item d-flex
-                
-                
-                courseindex-section-title" id="courseindexsection9" data-for="section_item" tabindex="-1">
-            <a data-toggle="collapse" href="#courseindexcollapse9" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse9" tabindex="-1">
-                <span class="collapsed-icon icon-no-margin mr-1" title="展開する" tabindex="-1">
-                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="sr-only" tabindex="-1">展開する</span>
-                </span>
-                <span class="expanded-icon icon-no-margin mr-1" title="折りたたむ" tabindex="-1">
-                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    <span class="sr-only" tabindex="-1">折りたたむ</span>
-                </span>
-            </a>
-            <a href="https://wsdmoodle.waseda.jp/course/view.php?id=240902#section-9" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
-                Week 9 December 9
-            </a>
-            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
-                ハイライト
-            </span>
-            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-            </span>
-            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-        </div>
-        <div id="courseindexcollapse9" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection9" role="group" tabindex="-1">
-            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="4022740" role="group" tabindex="-1">
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662193" data-for="cm" data-id="4662193" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4662193" data-for="cm_name" tabindex="-1">
-                        Unit 2.3 Slides from the Lecture
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662194" data-for="cm" data-id="4662194" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/lti/view.php?id=4662194" data-for="cm_name" tabindex="-1">
-                        Unit 2.3: Logical connectors - other (Review)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662195" data-for="cm" data-id="4662195" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662195" data-for="cm_name" tabindex="-1">
-                        Comprehension quiz (logical connectors - other)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="courseindex-section " id="course-index-section-4022741" data-for="section" data-id="4022741" data-number="10" role="treeitem" aria-owns="courseindexcollapse10" tabindex="-1" aria-selected="false">
-        <div class="courseindex-item d-flex
-                
-                
-                courseindex-section-title" id="courseindexsection10" data-for="section_item" tabindex="-1">
-            <a data-toggle="collapse" href="#courseindexcollapse10" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse10" tabindex="-1">
-                <span class="collapsed-icon icon-no-margin mr-1" title="展開する" tabindex="-1">
-                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="sr-only" tabindex="-1">展開する</span>
-                </span>
-                <span class="expanded-icon icon-no-margin mr-1" title="折りたたむ" tabindex="-1">
-                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    <span class="sr-only" tabindex="-1">折りたたむ</span>
-                </span>
-            </a>
-            <a href="https://wsdmoodle.waseda.jp/course/view.php?id=240902#section-10" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
-                Week 10 December 16
-            </a>
-            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
-                ハイライト
-            </span>
-            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-            </span>
-            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-        </div>
-        <div id="courseindexcollapse10" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection10" role="group" tabindex="-1">
-            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="4022741" role="group" tabindex="-1">
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662197" data-for="cm" data-id="4662197" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4662197" data-for="cm_name" tabindex="-1">
-                        Unit 2.6 Slides from the Lecture
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662198" data-for="cm" data-id="4662198" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/lti/view.php?id=4662198" data-for="cm_name" tabindex="-1">
-                        Unit 2.6 Macro-organization (Review)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662199" data-for="cm" data-id="4662199" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662199" data-for="cm_name" tabindex="-1">
-                        Comprehension quiz (macro-organization)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662205" data-for="cm" data-id="4662205" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_complete" data-for="cm_completion" data-value="1">
-        <i class="icon fa fa-circle fa-fw " title="完了" role="img" aria-label="完了"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662205" data-for="cm_name" tabindex="-1">
-                        AWL Quiz 4 Sublists 9a-b (4 points)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662200" data-for="cm" data-id="4662200" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_complete" data-for="cm_completion" data-value="1">
-        <i class="icon fa fa-circle fa-fw " title="完了" role="img" aria-label="完了"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/assign/view.php?id=4662200" data-for="cm_name" tabindex="-1">
-                        Extensive Reading Report 2 (9 points)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="courseindex-section " id="course-index-section-4022742" data-for="section" data-id="4022742" data-number="11" role="treeitem" aria-owns="courseindexcollapse11" tabindex="-1" aria-selected="false">
-        <div class="courseindex-item d-flex
-                
-                
-                courseindex-section-title" id="courseindexsection11" data-for="section_item" tabindex="-1">
-            <a data-toggle="collapse" href="#courseindexcollapse11" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse11" tabindex="-1">
-                <span class="collapsed-icon icon-no-margin mr-1" title="展開する" tabindex="-1">
-                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="sr-only" tabindex="-1">展開する</span>
-                </span>
-                <span class="expanded-icon icon-no-margin mr-1" title="折りたたむ" tabindex="-1">
-                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    <span class="sr-only" tabindex="-1">折りたたむ</span>
-                </span>
-            </a>
-            <a href="https://wsdmoodle.waseda.jp/course/view.php?id=240902#section-11" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
-                Week 11 December 23
-            </a>
-            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
-                ハイライト
-            </span>
-            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-            </span>
-            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-        </div>
-        <div id="courseindexcollapse11" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection11" role="group" tabindex="-1">
-            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="4022742" role="group" tabindex="-1">
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662201" data-for="cm" data-id="4662201" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4662201" data-for="cm_name" tabindex="-1">
-                        Unit 3.3 Slides from the Lecture
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662202" data-for="cm" data-id="4662202" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/lti/view.php?id=4662202" data-for="cm_name" tabindex="-1">
-                        Unit 3.3: Note-taking (Review)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662203" data-for="cm" data-id="4662203" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662203" data-for="cm_name" tabindex="-1">
-                        Comprehension quiz (Note-taking)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662204" data-for="cm" data-id="4662204" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_complete" data-for="cm_completion" data-value="1">
-        <i class="icon fa fa-circle fa-fw " title="完了" role="img" aria-label="完了"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/assign/view.php?id=4662204" data-for="cm_name" tabindex="-1">
-                        Intensive Reading 4, Parts 2 and 3 (1 point)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="courseindex-section " id="course-index-section-4022743" data-for="section" data-id="4022743" data-number="12" role="treeitem" aria-owns="courseindexcollapse12" tabindex="-1" aria-selected="false">
-        <div class="courseindex-item d-flex
-                
-                
-                courseindex-section-title" id="courseindexsection12" data-for="section_item" tabindex="-1">
-            <a data-toggle="collapse" href="#courseindexcollapse12" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse12" tabindex="-1">
-                <span class="collapsed-icon icon-no-margin mr-1" title="展開する" tabindex="-1">
-                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="sr-only" tabindex="-1">展開する</span>
-                </span>
-                <span class="expanded-icon icon-no-margin mr-1" title="折りたたむ" tabindex="-1">
-                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    <span class="sr-only" tabindex="-1">折りたたむ</span>
-                </span>
-            </a>
-            <a href="https://wsdmoodle.waseda.jp/course/view.php?id=240902#section-12" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
-                Week 12 January 6
-            </a>
-            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
-                ハイライト
-            </span>
-            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-            </span>
-            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-        </div>
-        <div id="courseindexcollapse12" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection12" role="group" tabindex="-1">
-            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="4022743" role="group" tabindex="-1">
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662206" data-for="cm" data-id="4662206" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4662206" data-for="cm_name" tabindex="-1">
-                        Unit 3.4 Slides from the Lecture
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662207" data-for="cm" data-id="4662207" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/lti/view.php?id=4662207" data-for="cm_name" tabindex="-1">
-                        Unit 3.4 SQ3R (Review)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662208" data-for="cm" data-id="4662208" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662208" data-for="cm_name" tabindex="-1">
-                        Comprehension quiz (SQ3R)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                         indented " id="course-index-cm-4662211" data-for="cm" data-id="4662211" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_complete" data-for="cm_completion" data-value="1">
-        <i class="icon fa fa-circle fa-fw " title="完了" role="img" aria-label="完了"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662211" data-for="cm_name" tabindex="-1">
-                        AWL Quiz 5 Sublist 10 (4 points)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="courseindex-section " id="course-index-section-4022744" data-for="section" data-id="4022744" data-number="13" role="treeitem" aria-owns="courseindexcollapse13" tabindex="-1" aria-selected="false">
-        <div class="courseindex-item d-flex
-                
-                
-                courseindex-section-title" id="courseindexsection13" data-for="section_item" tabindex="-1">
-            <a data-toggle="collapse" href="#courseindexcollapse13" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse13" tabindex="-1">
-                <span class="collapsed-icon icon-no-margin mr-1" title="展開する" tabindex="-1">
-                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="sr-only" tabindex="-1">展開する</span>
-                </span>
-                <span class="expanded-icon icon-no-margin mr-1" title="折りたたむ" tabindex="-1">
-                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    <span class="sr-only" tabindex="-1">折りたたむ</span>
-                </span>
-            </a>
-            <a href="https://wsdmoodle.waseda.jp/course/view.php?id=240902#section-13" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
-                Week 13 January 20
-            </a>
-            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
-                ハイライト
-            </span>
-            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-            </span>
-            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-        </div>
-        <div id="courseindexcollapse13" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection13" role="group" tabindex="-1">
-            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="4022744" role="group" tabindex="-1">
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662209" data-for="cm" data-id="4662209" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_incomplete" data-for="cm_completion" data-value="0">
-        <i class="icon fa fa-circle-thin fa-fw " title="ToDo" role="img" aria-label="ToDo"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4662209" data-for="cm_name" tabindex="-1">
-                        Unit 2.7 Lecture Slides
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662210" data-for="cm" data-id="4662210" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_complete" data-for="cm_completion" data-value="1">
-        <i class="icon fa fa-circle fa-fw " title="完了" role="img" aria-label="完了"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/assign/view.php?id=4662210" data-for="cm_name" tabindex="-1">
-                        [optional] Intensive Reading 5, Parts 2 and 3 (1 point)
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="courseindex-section " id="course-index-section-4022745" data-for="section" data-id="4022745" data-number="14" role="treeitem" aria-owns="courseindexcollapse14" tabindex="-1" aria-selected="false">
-        <div class="courseindex-item d-flex
-                
-                
-                courseindex-section-title" id="courseindexsection14" data-for="section_item" tabindex="-1">
-            <a data-toggle="collapse" href="#courseindexcollapse14" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse14" tabindex="-1">
-                <span class="collapsed-icon icon-no-margin mr-1" title="展開する" tabindex="-1">
-                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                    <span class="sr-only" tabindex="-1">展開する</span>
-                </span>
-                <span class="expanded-icon icon-no-margin mr-1" title="折りたたむ" tabindex="-1">
-                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    <span class="sr-only" tabindex="-1">折りたたむ</span>
-                </span>
-            </a>
-            <a href="https://wsdmoodle.waseda.jp/course/view.php?id=240902#section-14" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
-                Week 14 January 27
-            </a>
-            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
-                ハイライト
-            </span>
-            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-            </span>
-            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-        </div>
-        <div id="courseindexcollapse14" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection14" role="group" tabindex="-1">
-            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="4022745" role="group" tabindex="-1">
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662212" data-for="cm" data-id="4662212" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_complete" data-for="cm_completion" data-value="1">
-        <i class="icon fa fa-circle fa-fw " title="完了" role="img" aria-label="完了"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/assign/view.php?id=4662212" data-for="cm_name" tabindex="-1">
-                        Extensive Reading Report 3
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-
-
-                <li class="courseindex-item
-                        
-                        
-                        
-                        d-flex
-                        " id="course-index-cm-4662213" data-for="cm" data-id="4662213" role="treeitem" tabindex="-1" aria-selected="false">
-                    <span class="completioninfo completion_complete" data-for="cm_completion" data-value="1">
-        <i class="icon fa fa-circle fa-fw " title="完了" role="img" aria-label="完了"></i>
-    </span>
-                    <a class="courseindex-link text-truncate" href="https://wsdmoodle.waseda.jp/mod/assign/view.php?id=4662213" data-for="cm_name" tabindex="-1">
-                        [optional] AR2 Final Test Score Request Form
-                    </a>
-                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
-                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
-                    </span>
-                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-    </div>
-</nav>
-
-    </div>
-</div>
-        <div class="drawer drawer-right d-print-none" data-region="fixed-drawer" id="theme_boost-drawers-blocks" data-preference="drawer-open-block" data-state="show-drawer-right" data-forceopen="" data-close-on-resize="1" aria-hidden="true">
-    <div class="drawerheader">
-        <button class="btn drawertoggle icon-no-margin hidden" data-toggler="drawers" data-action="closedrawer" data-target="theme_boost-drawers-blocks" data-placement="left" title="ブロックドロワを閉じる" data-aria-hidden-tab-index="" tabindex="-1" data-disabled-toggle="tooltip">
-            <i class="icon fa fa-times fa-fw " aria-hidden="true"></i>
-        </button>
-        
-        <div class="drawerheadercontent hidden">
-            
-        </div>
-    </div>
-    <div class="drawercontent drag-container" data-usertour="scroller">
-                        <section class="d-print-none" aria-label="ブロック">
-                    
-                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><h2 class="sr-only">ブロック</h2><a href="#sb-2" class="sr-only sr-only-focusable" data-aria-hidden-tab-index="" tabindex="-1">Message My Teacher をスキップする</a>
-
-<section id="inst699579" class=" block_messageteacher block  card mb-3" role="complementary" data-block="messageteacher" data-instance-id="699579" aria-labelledby="instance-699579-header">
-
-    <div class="card-body p-3">
-
-            <h3 id="instance-699579-header" class="h5 card-title d-inline">Message My Teacher</h3>
-
-
-        <div class="card-text content mt-3">
-            <ul data-contextid="5102926" data-appendurl="1" data-referurl="https://wsdmoodle.waseda.jp/course/view.php?id=240902">
-<li><a href="https://wsdmoodle.waseda.jp/blocks/messageteacher/message.php?courseid=240902&amp;referurl=https%3A%2F%2Fwsdmoodle.waseda.jp%2Fcourse%2Fview.php%3Fid%3D240902&amp;recipientid=25336" class="messageteacher_link" data-courseid="240902" data-referurl="https://wsdmoodle.waseda.jp/course/view.php?id=240902" data-recipientid="25336" data-aria-hidden-tab-index="" tabindex="-1"><span>SUZUKI, Steven Taro スズキ　スティーブン　タロー</span></a></li>
-</ul>
-            <div class="footer"></div>
-            
-        </div>
-
-    </div>
-
-</section>
-
-  <span id="sb-2"></span></aside>
-                </section>
-
-    </div>
-</div>
-    <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers drag-container" style="overflow: visible;">
-        <div id="topofscroll" class="main-inner">
-            <div class="drawer-toggles d-flex">
-                    <div class="drawer-toggler drawer-left-toggle open-nav d-print-none">
-                        <button class="btn icon-no-margin" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-courseindex" data-placement="right" title="コースインデックスを開く" data-disabled-toggle="undefined" data-restore-tooltip-on-blur="true">
-                            <span class="sr-only">コースインデックスを開く</span>
-                            <i class="icon fa fa-list fa-fw " aria-hidden="true"></i>
-                        </button>
-                    </div>
-                    <div class="drawer-toggler drawer-right-toggle ml-auto d-print-none">
-                        <button class="btn icon-no-margin" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-blocks" data-placement="right" title="ブロックドロワを開く" data-disabled-toggle="undefined" data-restore-tooltip-on-blur="true">
-                            <span class="sr-only">ブロックドロワを開く</span>
-                            <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"></i></span>
-                            <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"></i></span>
-                        </button>
-                    </div>
-            </div>
-            <header id="page-header" class="header-maxwidth d-print-none">
-    <div class="w-100">
-        <div class="d-flex flex-wrap">
-            <div id="page-navbar">
-                <nav aria-label="ナビゲーションバー">
-</nav>
-            </div>
-            <div class="ml-auto d-flex">
-                
-            </div>
-            <div id="course-header">
-                
-            </div>
-        </div>
-        <div class="d-flex align-items-center">
-                    <div class="mr-auto">
-                        <div class="page-context-header d-flex align-items-center mb-2">
-    <div class="page-header-headings">
-        <h1 class="h2 mb-0">Academic Reading 2　月３スズキ</h1>
-    </div>
-</div>
-                    </div>
-            <div class="header-actions-container ml-auto" data-region="header-actions-container">
-            </div>
-        </div>
-    </div>
-</header>
-            <div id="page-content" class="pb-3 d-print-block">
-                <div id="region-main-box">
-                    <section id="region-main" aria-label="コンテンツ">
-
-                        <span class="notifications" id="user-notifications"></span>
-                        <div role="main"><span id="maincontent"></span><div class="course-content"><div id="67d9e91b622bc67d9e91b0514e55-course-format" class="stateready">
-    <h2 class="accesshide">コース: Academic Reading 2　月３スズキ | Waseda Moodle</h2>
-    <style type="text/css" media="screen">
-    /* <![CDATA[ */
-
-    /* -- Toggle -- */
-    .course-content ul.ctopics li.section .content .toggle,
-    .course-content ul.ctopics li.section .content.sectionhidden {
-        background-color: rgba(226, 226, 242, 1.0);
-    }
-    /* -- Toggle text -- */
-    .course-content ul.ctopics li.section .content .toggle .the_toggle,
-    .course-content ul.ctopics li.section .content.sectionhidden {
-        color: rgba(0, 0, 0, 1.0);
-    }
-    .course-content ul.ctopics li.section .content .toggle .the_toggle {
-        text-align: left;
-    }
-    .course-content ul.ctopics li.section .content.sectionhidden {
-        text-align: left;
-    }
-    /* Toggle icon position. */
-    .course-content ul.ctopics li.section .content .toggle .the_toggle,
-    #toggle-all .content .toggle-all {
-        background-position: left center;
-    }
-    /* -- What happens when a toggle is hovered over -- */
-    .course-content ul.ctopics li.section .content .toggle:hover .the_toggle,
-    .course-content ul.ctopics li.section .content.sectionhidden .toggle:hover .the_toggle,
-    .course-content ul.ctopics li.section .content .toggle:focus .the_toggle,
-    .course-content ul.ctopics li.section .content.sectionhidden .toggle:focus .the_toggle {
-        color: rgba(136, 136, 136, 1.0);
-    }
-    .course-content ul.ctopics li.section .content .toggle:hover,
-    .course-content ul.ctopics li.section .content .toggle:focus {
-        background-color: rgba(238, 238, 255, 1.0);
-    }
-    .course-content ul.ctopics li.section.main > .content,
-    .course-content ul.ctopics li.tcsection > .content {
-        margin: 0 ;
-    }
-    .course-content ul.ctopics li.section .content .toggle,
-    .course-content ul.ctopics li.section .content.sectionhidden {
-        border-top-left-radius: 0.7em;
-        border-top-right-radius: 0.7em;
-        border-bottom-right-radius: 0.7em;
-        border-bottom-left-radius: 0.7em;
-    }
-
-    /* ]]> */
-</style><ul class="ctopics"><li id="section-0" class="section course-section main clearfix" role="region" aria-labeled-by="sectionid-4022731-title" data-sectionid="0" data-for="section" data-id="4022731" data-number="0" data-indexed="true">
-    <div class="left side"></div>
-    <div class="content">
-            <h3 data-for="section_title" data-id="4022731" data-number="0" id="sectionid-4022731-title" class="accesshide">一般</h3>
-            <div class="section_availability">
-</div>
-            <div class="summary">
-                
-                
-            </div>
-            <ul class="section m-0 p-0 img-text d-block" data-for="cmlist">
-            
-            
-            
-            
-            <li class="activity activity-wrapper resource modtype_resource  hasinfo " id="module-4663388" data-for="cmitem" data-id="4663388" data-indexed="true">
-            </li>
-</ul>
-    </div>
-    <div class="right side"></div>
-</li><li id="toggle-all" class="tcsection main clearfix">
-    <div class="left side"><img class="icon spacer" width="1" height="1" alt="" aria-hidden="true" src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/spacer.gif"></div>
-    <div class="content">
-        <div class="sectionbody toggle-all-content toggle-point toggle-point-hover togglepos-left">
-            <span id="toggles-all-opened" class="toggle-all on tc-medium" role="button" title="すべての セクション を開く" tabindex="0" aria-controls="toggledsection-1 toggledsection-2 toggledsection-3 toggledsection-4 toggledsection-5 toggledsection-6 toggledsection-7 toggledsection-8 toggledsection-9 toggledsection-10 toggledsection-11 toggledsection-12 toggledsection-13 toggledsection-14">
-                <h4 class="toggle-all-header">全て展開する</h4>
-            </span>
-            <span id="toggles-all-closed" class="toggle-all off tc-medium" role="button" title="すべての セクション を閉じる" tabindex="0" aria-controls="toggledsection-1 toggledsection-2 toggledsection-3 toggledsection-4 toggledsection-5 toggledsection-6 toggledsection-7 toggledsection-8 toggledsection-9 toggledsection-10 toggledsection-11 toggledsection-12 toggledsection-13 toggledsection-14">
-                <h4 class="toggle-all-header">全て折り畳む</h4>
-            </span>
-        </div>
-    </div>
-    <div class="right side"><img class="icon spacer" width="1" height="1" alt="" aria-hidden="true" src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/spacer.gif"></div>
-</li><li id="topcoll-display-instructions" class="tcsection main clearfix">
-    <div class="left side"><img class="icon spacer" width="1" height="1" alt="" aria-hidden="true" src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/spacer.gif"></div>
-    <div class="content">
-        <div class="sectionbody">
-            <p>解説 : セクション名をクリックすることでセクションを展開したり折りたたんだりすることができます。</p>
-        </div>
-    </div>
-    <div class="right side"><img class="icon spacer" width="1" height="1" alt="" aria-hidden="true" src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/spacer.gif"></div>
-</li></ul><div class="row"><ul class="ctopics ctoggled topics col-sm-12"><li id="section-1" class="section course-section main clearfix" role="region" aria-labeled-by="sectionid-4022732-title" data-sectionid="1" data-for="section" data-id="4022732" data-number="1" data-indexed="true">
-    <div class="left side"></div>
-    <div class="content" aria-live="polite">
-        <div id="toggle-1" class="sectionhead toggle toggle-point" tabindex="0">
-            <span class="the_toggle toggle_closed tc-medium" role="button" aria-expanded="false" aria-controls="toggledsection-1"><h3 data-for="section_title" data-id="4022732" data-number="1" id="sectionid-4022732-title" class="sectionname">Week 1 October 7</h3></span>
-        </div>
-        
-                <div class="section_availability">
-</div>
-        <div id="toggledsection-1" class="sectionbody toggledsection">
-            
-            <ul class="section m-0 p-0 img-text d-block" data-for="cmlist">
-            
-            
-            <li class="activity activity-wrapper url modtype_url  hasinfo " id="module-4662164" data-for="cmitem" data-id="4662164" data-indexed="true">
-        <div class="activity-item" data-activityname="CELESE AR2 Web Page">
-                <div class="bulkselect d-none" data-for="cmBulkSelect">
-                    <input id="cmCheckbox4662164" type="checkbox" data-id="4662164" data-action="toggleSelectionCm" data-bulkcheckbox="1" disabled="disabled">
-                    <label class="sr-only" for="cmCheckbox4662164">
-                        活動 CELESE AR2 Web Page を選択する
-                    </label>
-                </div>
-
-                <div class="activity-grid ">
-                
-                                            <div class="activity-icon activityiconcontainer smaller content  courseicon align-self-start mr-2">
-                                                <img src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/monologo.svg" class="activityicon " data-region="activity-icon" data-id="4662164" alt="">
-                                            </div>
-                                
-                                    <div class="activity-name-area activity-instance d-flex flex-column mr-2">
-                                        <div class="activitytitle  modtype_url position-relative align-self-start">
-                                            <div class="activityname">
-                                                            <a href="https://wsdmoodle.waseda.jp/mod/url/view.php?id=4662164" class=" aalink stretched-link" onclick="window.open('https://wsdmoodle.waseda.jp/mod/url/view.php?id=4662164&amp;redirect=1'); return false;">        <span class="instancename">CELESE AR2 Web Page <span class="accesshide "> URL</span></span>    </a>
-                                                        
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                
-                
-                
-                
-                            <div class="activity-completion align-self-start ml-sm-2">
-                                    <div data-region="activity-information" data-activityname="CELESE AR2 Web Page" class="activity-information">
-                                            <div data-region="completion-info">
-                                    
-                                                                    <button class="btn btn-outline-secondary btn-sm text-nowrap" data-action="toggle-manual-completion" data-toggletype="manual:mark-done" data-cmid="4662164" data-activityname="CELESE AR2 Web Page" data-withavailability="0" title="CELESE AR2 Web Page を完了マークする" aria-label="CELESE AR2 Web Page を完了マークする">
-                                                                        完了マークする
-                                                                    </button>
-                                                            
-                                            </div>
-                                    </div>
                             </div>
-                
-                
-                        <div class="activity-altcontent d-flex text-break activity-description">
-                            <div class="no-overflow"><div class="no-overflow"><p>This web page contains important information and several useful resources for the AR2 course.&nbsp;</p></div></div>
-                        </div>
-                
-                
-                </div>
-        </div>
-            </li>
-            
-            
-            <li class="activity activity-wrapper resource modtype_resource  hasinfo " id="module-4662165" data-for="cmitem" data-id="4662165" data-indexed="true">
-        <div class="activity-item" data-activityname="2024 AR2 Syllabus">
-                <div class="bulkselect d-none" data-for="cmBulkSelect">
-                    <input id="cmCheckbox4662165" type="checkbox" data-id="4662165" data-action="toggleSelectionCm" data-bulkcheckbox="1" disabled="disabled">
-                    <label class="sr-only" for="cmCheckbox4662165">
-                        活動 2024 AR2 Syllabus を選択する
-                    </label>
-                </div>
-
-                <div class="activity-grid ">
-                
-                                            <div class="activity-icon activityiconcontainer smaller content  courseicon align-self-start mr-2">
-                                                <img src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/pdf.svg" class="activityicon " data-region="activity-icon" data-id="4662165" alt="">
-                                            </div>
-                                
-                                    <div class="activity-name-area activity-instance d-flex flex-column mr-2">
-                                        <div class="activitytitle  modtype_resource position-relative align-self-start">
-                                            <div class="activityname">
-                                                            <a href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4662165" class=" aalink stretched-link" onclick="">        <span class="instancename">2024 AR2 Syllabus <span class="accesshide "> ファイル</span></span>    </a>
-                                                        
-                                                        <span class="ml-1">
-                                                            <span class="activitybadge badge rounded-pill ">
-                                                                    
-                                                            </span>
-                                                        </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                
-                
-                
-                
-                            <div class="activity-completion align-self-start ml-sm-2">
-                                    <div data-region="activity-information" data-activityname="2024 AR2 Syllabus" class="activity-information">
-                                            <div data-region="completion-info">
-                                    
-                                                                    <button class="btn btn-outline-secondary btn-sm text-nowrap" data-action="toggle-manual-completion" data-toggletype="manual:mark-done" data-cmid="4662165" data-activityname="2024 AR2 Syllabus" data-withavailability="0" title="2024 AR2 Syllabus を完了マークする" aria-label="2024 AR2 Syllabus を完了マークする">
-                                                                        完了マークする
-                                                                    </button>
-                                                            
-                                            </div>
-                                    </div>
+                            <div class="header-actions-container ml-auto" data-region="header-actions-container">
                             </div>
-                
-                
-                
-                
-                </div>
-        </div>
-            </li>
-            
-            
-            <li class="activity activity-wrapper folder modtype_folder  hasinfo " id="module-4662166" data-for="cmitem" data-id="4662166" data-indexed="true">
-        <div class="activity-item" data-activityname="2024 AR2 Student Performance Record Sheet (SPRS)">
-                <div class="bulkselect d-none" data-for="cmBulkSelect">
-                    <input id="cmCheckbox4662166" type="checkbox" data-id="4662166" data-action="toggleSelectionCm" data-bulkcheckbox="1" disabled="disabled">
-                    <label class="sr-only" for="cmCheckbox4662166">
-                        活動 2024 AR2 Student Performance Record Sheet (SPRS) を選択する
-                    </label>
-                </div>
-
-                <div class="activity-grid ">
-                
-                                            <div class="activity-icon activityiconcontainer smaller content  courseicon align-self-start mr-2">
-                                                <img src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/monologo_003.svg" class="activityicon " data-region="activity-icon" data-id="4662166" alt="">
-                                            </div>
-                                
-                                    <div class="activity-name-area activity-instance d-flex flex-column mr-2">
-                                        <div class="activitytitle  modtype_folder position-relative align-self-start">
-                                            <div class="activityname">
-                                                            <a href="https://wsdmoodle.waseda.jp/mod/folder/view.php?id=4662166" class=" aalink stretched-link" onclick="">        <span class="instancename">2024 AR2 Student Performance Record Sheet (SPRS) <span class="accesshide "> フォルダ</span></span>    </a>
-                                                        
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                
-                
-                
-                
-                            <div class="activity-completion align-self-start ml-sm-2">
-                                    <div data-region="activity-information" data-activityname="2024 AR2 Student Performance Record Sheet (SPRS)" class="activity-information">
-                                            <div data-region="completion-info">
-                                    
-                                                                    <button class="btn btn-outline-secondary btn-sm text-nowrap" data-action="toggle-manual-completion" data-toggletype="manual:mark-done" data-cmid="4662166" data-activityname="2024 AR2 Student Performance Record Sheet (SPRS)" data-withavailability="0" title="2024 AR2 Student Performance Record Sheet (SPRS) を完了マークする" aria-label="2024 AR2 Student Performance Record Sheet (SPRS) を完了マークする">
-                                                                        完了マークする
-                                                                    </button>
-                                                            
-                                            </div>
-                                    </div>
-                            </div>
-                
-                
-                        <div class="activity-altcontent d-flex text-break activity-description">
-                            <div class="no-overflow"><div class="no-overflow"><p>The Excel file is an automatic calculator. If you wish to track your score manually, you can print out the PDF version.</p></div></div>
                         </div>
-                
-                
-                </div>
-        </div>
-            </li>
-</ul>
-        </div>
-    </div>
-    <div class="right side"><a title="「セクション 1」のみ表示する" class="cps_centre" href="https://wsdmoodle.waseda.jp/course/view.php?id=240902&amp;section=1"><span title="「セクション 1」のみ表示する" class="tcosif fa fa-dot-circle-o"></span></a></div>
-</li><li id="section-2" class="section course-section main clearfix" role="region" aria-labeled-by="sectionid-4022733-title" data-sectionid="2" data-for="section" data-id="4022733" data-number="2" data-indexed="true">
-    <div class="left side"></div>
-    <div class="content" aria-live="polite">
-        <div id="toggle-2" class="sectionhead toggle toggle-point" tabindex="0">
-            <span class="the_toggle toggle_closed tc-medium" role="button" aria-expanded="false" aria-controls="toggledsection-2"><h3 data-for="section_title" data-id="4022733" data-number="2" id="sectionid-4022733-title" class="sectionname">Week 2 October 14</h3></span>
-        </div>
-        
-                <div class="section_availability">
-</div>
-        <div id="toggledsection-2" class="sectionbody toggledsection">
-            
-            <ul class="section m-0 p-0 img-text d-block" data-for="cmlist">
-            
-            
-            <li class="activity activity-wrapper lti modtype_lti  hasinfo " id="module-4662167" data-for="cmitem" data-id="4662167" data-indexed="true">
-        <div class="activity-item" data-activityname="Units 1.2, 1.3: Interests and Motivations">
-                <div class="bulkselect d-none" data-for="cmBulkSelect">
-                    <input id="cmCheckbox4662167" type="checkbox" data-id="4662167" data-action="toggleSelectionCm" data-bulkcheckbox="1" disabled="disabled">
-                    <label class="sr-only" for="cmCheckbox4662167">
-                        活動 Units 1.2, 1.3: Interests and Motivations を選択する
-                    </label>
-                </div>
-
-                <div class="activity-grid ">
-                
-                                            <div class="activity-icon activityiconcontainer smaller other  courseicon align-self-start mr-2">
-                                                <img src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/Lecture-Contents.ico" class="activityicon nofilter" data-region="activity-icon" data-id="4662167" alt="">
-                                            </div>
-                                
-                                    <div class="activity-name-area activity-instance d-flex flex-column mr-2">
-                                        <div class="activitytitle  modtype_lti position-relative align-self-start">
-                                            <div class="activityname">
-                                                            <a href="https://wsdmoodle.waseda.jp/mod/lti/view.php?id=4662167" class=" aalink stretched-link" onclick="">        <span class="instancename">Units 1.2, 1.3: Interests and Motivations <span class="accesshide "> 外部ツール</span></span>    </a>
-                                                        
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                
-                
-                
-                
-                            <div class="activity-completion align-self-start ml-sm-2">
-                                    <div data-region="activity-information" data-activityname="Units 1.2, 1.3: Interests and Motivations" class="activity-information">
-                                            <div data-region="completion-info">
-                                    
-                                                                    <button class="btn btn-outline-secondary btn-sm text-nowrap" data-action="toggle-manual-completion" data-toggletype="manual:mark-done" data-cmid="4662167" data-activityname="Units 1.2, 1.3: Interests and Motivations" data-withavailability="0" title="Units 1.2, 1.3: Interests and Motivations を完了マークする" aria-label="Units 1.2, 1.3: Interests and Motivations を完了マークする">
-                                                                        完了マークする
-                                                                    </button>
-                                                            
-                                            </div>
-                                    </div>
-                            </div>
-                
-                
-                
-                
-                </div>
-        </div>
-            </li>
-            
-            
-            <li class="activity activity-wrapper lti modtype_lti  hasinfo " id="module-4662168" data-for="cmitem" data-id="4662168" data-indexed="true">
-        <div class="activity-item" data-activityname="Section 2: Introduction to logical connectors">
-                <div class="bulkselect d-none" data-for="cmBulkSelect">
-                    <input id="cmCheckbox4662168" type="checkbox" data-id="4662168" data-action="toggleSelectionCm" data-bulkcheckbox="1" disabled="disabled">
-                    <label class="sr-only" for="cmCheckbox4662168">
-                        活動 Section 2: Introduction to logical connectors を選択する
-                    </label>
-                </div>
-
-                <div class="activity-grid ">
-                
-                                            <div class="activity-icon activityiconcontainer smaller other  courseicon align-self-start mr-2">
-                                                <img src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/Lecture-Contents.ico" class="activityicon nofilter" data-region="activity-icon" data-id="4662168" alt="">
-                                            </div>
-                                
-                                    <div class="activity-name-area activity-instance d-flex flex-column mr-2">
-                                        <div class="activitytitle  modtype_lti position-relative align-self-start">
-                                            <div class="activityname">
-                                                            <a href="https://wsdmoodle.waseda.jp/mod/lti/view.php?id=4662168" class=" aalink stretched-link" onclick="">        <span class="instancename">Section 2: Introduction to logical connectors <span class="accesshide "> 外部ツール</span></span>    </a>
-                                                        
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                
-                
-                
-                
-                            <div class="activity-completion align-self-start ml-sm-2">
-                                    <div data-region="activity-information" data-activityname="Section 2: Introduction to logical connectors" class="activity-information">
-                                            <div data-region="completion-info">
-                                                    <div data-region="completionrequirements" aria-label="Section 2: Introduction to logical connectors の完了条件">
-                                                        <div class="dropdown     completion-dropdown   " id="dropdownDialog_67d9e91b0514e6" data-dropdown-dialog-initialized="true">
-                                                            <button class="     btn btn-sm dropdown-toggle icon-no-margin    " type="button" id="dropwdownbutton_67d9e91b0514e7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-for="dropdowndialog_button">
-                                                                    ToDo
-                                                            </button>
-                                                            <div class="dropdown-menu   dropdown-menu-right       " aria-labelledby="dropwdownbutton_67d9e91b0514e7" data-for="dropdowndialog_dialog">
-                                                                <div class="p-2" data-for="dropdowndialog_content">
-                                                                        <div class="completion-dialog px-2">
-            <strong>あなたに必要なこと:</strong>
-
-        <div class="ml-2" role="list">
-                    <div class="d-flex mt-2" role="listitem">
-                        <div>
-                            <img class="icon " alt="" aria-hidden="true" src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/dot.svg">
-                            <span class="sr-only">完了条件:</span>
-                        </div>
-                        <span>閲覧</span>
                     </div>
-
-
-        </div>
-
-
-</div>
-                                                                </div>
-                                                            </div>
+                </header>
+                <div id="page-content" class="pb-3 d-print-block">
+                    <div id="region-main-box">
+                        <section id="region-main" aria-label="コンテンツ">
+                            <span class="notifications" id="user-notifications"></span>
+                            <div role="main">
+                                <span id="maincontent"></span>
+                                <aside id="block-region-content" class="block-region" data-blockregion="content" data-droptarget="1">
+                                    <section id="inst13" class="block_calendar_upcoming block card mb-3" role="complementary" data-block="calendar_upcoming" data-instance-id="13" aria-labelledby="instance-13-header">
+                                        <div class="card-body p-3">
+                                            <h3 id="instance-13-header" class="h5 card-title d-inline">早稲田うたおう会</h3>
+                                            <div class="card-text content mt-3">
+                                                <!-- サークル紹介セクション -->
+                                                <div class="toggle-section" id="toggle-section-1">
+                                                    <h3><span class="toggle-icon"><i class="fa fa-chevron-right"></i></span>サークル紹介</h3>
+                                                </div>
+                                                <div class="section-content" id="section-content-1">
+                                                    <p>うたおう会はフリーバンド制でどこよりもオールジャンルな早稲田理工学術院公認のバンドサークルです！</p>
+                                                    <p>初心者が多く大学から楽器を始めたい方も大歓迎です！是非新歓ライブにお越しください！</p>
+                                                </div>
+                                                
+                                                <!-- 紹介写真セクション -->
+                                                <div class="toggle-section" id="toggle-section-2">
+                                                    <h3><span class="toggle-icon"><i class="fa fa-chevron-right"></i></span>紹介写真</h3>
+                                                </div>
+                                                <div class="section-content" id="section-content-2">
+                                                    <div class="photo-gallery">
+                                                        <div class="photo-item">
+                                                            <img src="images/サークル/早稲田うたおう会/IMG_2309.jpeg" alt="うたおう会写真 IMG_2309">
+                                                        </div>
+                                                        <div class="photo-item">
+                                                            <img src="images/サークル/早稲田うたおう会/IMG_3918.jpeg" alt="うたおう会写真 IMG_3908">
+                                                        </div>
+                                                        <div class="photo-item">
+                                                            <img src="images/サークル/早稲田うたおう会/IMG_3908.jpeg" alt="うたおう会写真 IMG_3918">
                                                         </div>
                                                     </div>
-                                    
-                                            </div>
-                                    </div>
-                            </div>
-                
-                
-                
-                
-                </div>
-        </div>
-            </li>
-            
-            
-            <li class="activity activity-wrapper resource modtype_resource  hasinfo " id="module-4662169" data-for="cmitem" data-id="4662169" data-indexed="true">
-        <div class="activity-item" data-activityname="Unit 2.1 (Parts 1-2) Slides from Class Lecture">
-                <div class="bulkselect d-none" data-for="cmBulkSelect">
-                    <input id="cmCheckbox4662169" type="checkbox" data-id="4662169" data-action="toggleSelectionCm" data-bulkcheckbox="1" disabled="disabled">
-                    <label class="sr-only" for="cmCheckbox4662169">
-                        活動 Unit 2.1 (Parts 1-2) Slides from Class Lecture を選択する
-                    </label>
-                </div>
-
-                <div class="activity-grid ">
-                
-                                            <div class="activity-icon activityiconcontainer smaller content  courseicon align-self-start mr-2">
-                                                <img src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/pdf.svg" class="activityicon " data-region="activity-icon" data-id="4662169" alt="">
-                                            </div>
-                                
-                                    <div class="activity-name-area activity-instance d-flex flex-column mr-2">
-                                        <div class="activitytitle  modtype_resource position-relative align-self-start">
-                                            <div class="activityname">
-                                                            <a href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4662169" class=" aalink stretched-link" onclick="">        <span class="instancename">Unit 2.1 (Parts 1-2) Slides from Class Lecture <span class="accesshide "> ファイル</span></span>    </a>
-                                                        
-                                                        <span class="ml-1">
-                                                            <span class="activitybadge badge rounded-pill ">
-                                                                    
-                                                            </span>
-                                                        </span>
+                                                </div>
+                                                
+                                                <!-- 今後の新歓予定セクション -->
+                                                <div class="toggle-section" id="toggle-section-3">
+                                                    <h3><span class="toggle-icon"><i class="fa fa-chevron-right"></i></span>今後の新歓予定</h3>
+                                                </div>
+                                                <div class="section-content" id="section-content-3">
+                                                    <h4>🌸新歓日程(予定)🌸</h4>
+                                                    <ul class="schedule-list">
+                                                        <li>4/7(月) 早稲田JACK出演🎤</li>
+                                                        <li>4/9(水) 新歓ライブ1日目🎸、ベースオントップ主催ライブ出演🎹</li>
+                                                        <li>4/18(金) 新歓ご飯会🍚</li>
+                                                        <li>4/22(火) 新歓ご飯会🍚</li>
+                                                        <li>4/27(日) 新歓ライブ2日目🎸</li>
+                                                        <li>5/24(土),25(日) 新入生ライブ🎵</li>
+                                                    </ul>
+                                                    
+                                                    <p>上記に加え、バンド組み会議や楽器講習会なども開催予定ですので随時SNSの情報をチェックしてください😊</p>
+                                                    
+                                                    <p>X、インスタでDMいただければ、新歓LINEグループに招待します！少しでも興味ある方、ご気軽に連絡ください！</p>
+                                                    
+                                                    <div class="social-links">
+                                                        <a href="https://x.com/weareutaoukai?s=21&t=FO03BYKQE_XCr9oA4Pb-Tw" target="_blank">うたおう会公式X</a>
+                                                        <a href="https://www.instagram.com/weareutaoukai?igsh=MWJwc2lzODNqZG9lag%3D%3D&utm_source=qr" target="_blank">うたおう会公式インスタグラム</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                
-                
-                
-                
-                
-                            <div class="activity-completion align-self-start ml-sm-2">
-                                    <div data-region="activity-information" data-activityname="Unit 2.1 (Parts 1-2) Slides from Class Lecture" class="activity-information">
-                                            <div data-region="completion-info">
-                                    
-                                                                    <button class="btn btn-outline-secondary btn-sm text-nowrap" data-action="toggle-manual-completion" data-toggletype="manual:mark-done" data-cmid="4662169" data-activityname="Unit 2.1 (Parts 1-2) Slides from Class Lecture" data-withavailability="0" title="Unit 2.1 (Parts 1-2) Slides from Class Lecture を完了マークする" aria-label="Unit 2.1 (Parts 1-2) Slides from Class Lecture を完了マークする">
-                                                                        完了マークする
-                                                                    </button>
-                                                            
-                                            </div>
-                                    </div>
+                                    </section>
+                                </aside>
                             </div>
-                
-                
-                        <div class="activity-altcontent d-flex text-break activity-description">
-                            <div class="no-overflow"><div class="no-overflow"><p dir="ltr" style="text-align: left;">Presentation slides we viewed in class.&nbsp;<br></p></div></div>
-                        </div>
-                
-                
+                        </section>
+                    </div>
                 </div>
-        </div>
-            </li>
-</ul>
+            </div>
         </div>
     </div>
-    <div class="right side"><a title="「セクション 2」のみ表示する" class="cps_centre" href="https://wsdmoodle.waseda.jp/course/view.php?id=240902&amp;section=2"><span title="「セクション 2」のみ表示する" class="tcosif fa fa-dot-circle-o"></span></a></div>
-</li><li id="section-3" class="section course-section main clearfix" role="region" aria-labeled-by="sectionid-4022734-title" data-sectionid="3" data-for="section" data-id="4022734" data-number="3" data-indexed="true">
-    <div class="left side"></div>
-    <div class="content" aria-live="polite">
-        <div id="toggle-3" class="sectionhead toggle toggle-point" tabindex="0">
-            <span class="the_toggle toggle_closed tc-medium" role="button" aria-expanded="false" aria-controls="toggledsection-3"><h3 data-for="section_title" data-id="4022734" data-number="3" id="sectionid-4022734-title" class="sectionname">Week 3 October 21</h3></span>
-        </div>
-        
-                <div class="section_availability">
-</div>
-        <div id="toggledsection-3" class="sectionbody toggledsection">
-            
-            <ul class="section m-0 p-0 img-text d-block" data-for="cmlist">
-            
-            
-            <li class="activity activity-wrapper resource modtype_resource  hasinfo " id="module-4662170" data-for="cmitem" data-id="4662170" data-indexed="true">
-        <div class="activity-item" data-activityname="Unit 2.1 (Parts 3-5) Slides from Class Lecture">
-                <div class="bulkselect d-none" data-for="cmBulkSelect">
-                    <input id="cmCheckbox4662170" type="checkbox" data-id="4662170" data-action="toggleSelectionCm" data-bulkcheckbox="1" disabled="disabled">
-                    <label class="sr-only" for="cmCheckbox4662170">
-                        活動 Unit 2.1 (Parts 3-5) Slides from Class Lecture を選択する
-                    </label>
-                </div>
-
-                <div class="activity-grid ">
-                
-                                            <div class="activity-icon activityiconcontainer smaller content  courseicon align-self-start mr-2">
-                                                <img src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/pdf.svg" class="activityicon " data-region="activity-icon" data-id="4662170" alt="">
-                                            </div>
-                                
-                                    <div class="activity-name-area activity-instance d-flex flex-column mr-2">
-                                        <div class="activitytitle  modtype_resource position-relative align-self-start">
-                                            <div class="activityname">
-                                                            <a href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4662170" class=" aalink stretched-link" onclick="">        <span class="instancename">Unit 2.1 (Parts 3-5) Slides from Class Lecture <span class="accesshide "> ファイル</span></span>    </a>
-                                                        
-                                                        <span class="ml-1">
-                                                            <span class="activitybadge badge rounded-pill ">
-                                                                    
-                                                            </span>
-                                                        </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                
-                
-                
-                
-                            <div class="activity-completion align-self-start ml-sm-2">
-                                    <div data-region="activity-information" data-activityname="Unit 2.1 (Parts 3-5) Slides from Class Lecture" class="activity-information">
-                                            <div data-region="completion-info">
-                                    
-                                                                    <button class="btn btn-outline-secondary btn-sm text-nowrap" data-action="toggle-manual-completion" data-toggletype="manual:mark-done" data-cmid="4662170" data-activityname="Unit 2.1 (Parts 3-5) Slides from Class Lecture" data-withavailability="0" title="Unit 2.1 (Parts 3-5) Slides from Class Lecture を完了マークする" aria-label="Unit 2.1 (Parts 3-5) Slides from Class Lecture を完了マークする">
-                                                                        完了マークする
-                                                                    </button>
-                                                            
-                                            </div>
-                                    </div>
-                            </div>
-                
-                
-                
-                
-                </div>
-        </div>
-            </li>
-            
-            
-            <li class="activity activity-wrapper lti modtype_lti  hasinfo " id="module-4662171" data-for="cmitem" data-id="4662171" data-indexed="true">
-        <div class="activity-item" data-activityname="Unit 2.1: Resemblance logical connectors (Review)">
-                <div class="bulkselect d-none" data-for="cmBulkSelect">
-                    <input id="cmCheckbox4662171" type="checkbox" data-id="4662171" data-action="toggleSelectionCm" data-bulkcheckbox="1" disabled="disabled">
-                    <label class="sr-only" for="cmCheckbox4662171">
-                        活動 Unit 2.1: Resemblance logical connectors (Review) を選択する
-                    </label>
-                </div>
-
-                <div class="activity-grid ">
-                
-                                            <div class="activity-icon activityiconcontainer smaller other  courseicon align-self-start mr-2">
-                                                <img src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/Lecture-Contents.ico" class="activityicon nofilter" data-region="activity-icon" data-id="4662171" alt="">
-                                            </div>
-                                
-                                    <div class="activity-name-area activity-instance d-flex flex-column mr-2">
-                                        <div class="activitytitle  modtype_lti position-relative align-self-start">
-                                            <div class="activityname">
-                                                            <a href="https://wsdmoodle.waseda.jp/mod/lti/view.php?id=4662171" class=" aalink stretched-link" onclick="">        <span class="instancename">Unit 2.1: Resemblance logical connectors (Review) <span class="accesshide "> 外部ツール</span></span>    </a>
-                                                        
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                
-                
-                
-                
-                            <div class="activity-completion align-self-start ml-sm-2">
-                                    <div data-region="activity-information" data-activityname="Unit 2.1: Resemblance logical connectors (Review)" class="activity-information">
-                                            <div data-region="completion-info">
-                                                    <div data-region="completionrequirements" aria-label="Unit 2.1: Resemblance logical connectors (Review) の完了条件">
-                                                        <div class="dropdown     completion-dropdown   " id="dropdownDialog_67d9e91b0514e8" data-dropdown-dialog-initialized="true">
-                                                            <button class="     btn btn-sm dropdown-toggle icon-no-margin    " type="button" id="dropwdownbutton_67d9e91b0514e9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-for="dropdowndialog_button">
-                                                                    ToDo
-                                                            </button>
-                                                            <div class="dropdown-menu   dropdown-menu-right       " aria-labelledby="dropwdownbutton_67d9e91b0514e9" data-for="dropdowndialog_dialog">
-                                                                <div class="p-2" data-for="dropdowndialog_content">
-                                                                        <div class="completion-dialog px-2">
-            <strong>あなたに必要なこと:</strong>
-
-        <div class="ml-2" role="list">
-                    <div class="d-flex mt-2" role="listitem">
-                        <div>
-                            <img class="icon " alt="" aria-hidden="true" src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/dot.svg">
-                            <span class="sr-only">完了条件:</span>
-                        </div>
-                        <span>閲覧</span>
-                    </div>
-
-
-        </div>
-
-
-</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                    
-                                            </div>
-                                    </div>
-                            </div>
-                
-                
-                
-                
-                </div>
-        </div>
-            </li>
-            
-            
-            <li class="activity activity-wrapper quiz modtype_quiz  hasinfo indented" id="module-4662172" data-for="cmitem" data-id="4662172" data-indexed="true">
-        <div class="activity-item indent-1" data-activityname="Comprehension quiz (resemblance connectors)">
-                <div class="bulkselect d-none" data-for="cmBulkSelect">
-                    <input id="cmCheckbox4662172" type="checkbox" data-id="4662172" data-action="toggleSelectionCm" data-bulkcheckbox="1" disabled="disabled">
-                    <label class="sr-only" for="cmCheckbox4662172">
-                        活動 Comprehension quiz (resemblance connectors) を選択する
-                    </label>
-                </div>
-
-                <div class="activity-grid ">
-                
-                                            <div class="activity-icon activityiconcontainer smaller assessment  courseicon align-self-start mr-2">
-                                                <img src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/monologo_005.svg" class="activityicon " data-region="activity-icon" data-id="4662172" alt="">
-                                            </div>
-                                
-                                    <div class="activity-name-area activity-instance d-flex flex-column mr-2">
-                                        <div class="activitytitle  modtype_quiz position-relative align-self-start">
-                                            <div class="activityname">
-                                                            <a href="https://wsdmoodle.waseda.jp/mod/quiz/view.php?id=4662172" class=" aalink stretched-link" onclick="">        <span class="instancename">Comprehension quiz (resemblance connectors) <span class="accesshide "> 40_小テスト</span></span>    </a>
-                                                        
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                
-                
-                
-                
-                            <div class="activity-completion align-self-start ml-sm-2">
-                                    <div data-region="activity-information" data-activityname="Comprehension quiz (resemblance connectors)" class="activity-information">
-                                            <div data-region="completion-info">
-                                                    <div data-region="completionrequirements" aria-label="Comprehension quiz (resemblance connectors) の完了条件">
-                                                        <div class="dropdown     completion-dropdown   " id="dropdownDialog_67d9e91b0514e10" data-dropdown-dialog-initialized="true">
-                                                            <button class="     btn btn-sm dropdown-toggle icon-no-margin    " type="button" id="dropwdownbutton_67d9e91b0514e11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-for="dropdowndialog_button">
-                                                                    ToDo
-                                                            </button>
-                                                            <div class="dropdown-menu   dropdown-menu-right       " aria-labelledby="dropwdownbutton_67d9e91b0514e11" data-for="dropdowndialog_dialog">
-                                                                <div class="p-2" data-for="dropdowndialog_content">
-                                                                        <div class="completion-dialog px-2">
-            <strong>あなたに必要なこと:</strong>
-
-        <div class="ml-2" role="list">
-                    <div class="d-flex mt-2" role="listitem">
-                        <div>
-                            <img class="icon " alt="" aria-hidden="true" src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/dot.svg">
-                            <span class="sr-only">完了条件:</span>
-                        </div>
-                        <span>閲覧</span>
-                    </div>
-
-                    <div class="d-flex mt-2" role="listitem">
-                        <div>
-                            <img class="icon " alt="" aria-hidden="true" src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/dot.svg">
-                            <span class="sr-only">完了条件:</span>
-                        </div>
-                        <span>評定</span>
-                    </div>
-
-                    <div class="d-flex mt-2" role="listitem">
-                        <div>
-                            <img class="icon " alt="" aria-hidden="true" src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/dot.svg">
-                            <span class="sr-only">完了条件:</span>
-                        </div>
-                        <span>合格点取得</span>
-                    </div>
-
-
-        </div>
-
-
-</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                    
-                                            </div>
-                                    </div>
-                            </div>
-                
-                
-                
-                
-                </div>
-        </div>
-            </li>
-            
-            
-            <li class="activity activity-wrapper assign modtype_assign  hasinfo " id="module-4662178" data-for="cmitem" data-id="4662178" data-indexed="true">
-        <div class="activity-item" data-activityname="Intensive Reading 1, Parts 2 and 3 (1 point)">
-                <div class="bulkselect d-none" data-for="cmBulkSelect">
-                    <input id="cmCheckbox4662178" type="checkbox" data-id="4662178" data-action="toggleSelectionCm" data-bulkcheckbox="1" disabled="disabled">
-                    <label class="sr-only" for="cmCheckbox4662178">
-                        活動 Intensive Reading 1, Parts 2 and 3 (1 point) を選択する
-                    </label>
-                </div>
-
-                <div class="activity-grid ">
-                
-                                            <div class="activity-icon activityiconcontainer smaller assessment  courseicon align-self-start mr-2">
-                                                <img src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/monologo_004.svg" class="activityicon " data-region="activity-icon" data-id="4662178" alt="">
-                                            </div>
-                                
-                                    <div class="activity-name-area activity-instance d-flex flex-column mr-2">
-                                        <div class="activitytitle  modtype_assign position-relative align-self-start">
-                                            <div class="activityname">
-                                                            <a href="https://wsdmoodle.waseda.jp/mod/assign/view.php?id=4662178" class=" aalink stretched-link" onclick="">        <span class="instancename">Intensive Reading 1, Parts 2 and 3 (1 point) <span class="accesshide "> 30_課題</span></span>    </a>
-                                                        
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                
-                            <div data-region="activity-dates" class="activity-dates mr-sm-2">
-                                        <div>
-                                            <strong>期限:</strong> 2024年 10月 21日(月曜日) 23:59
-                                        </div>
-                            </div>
-                
-                
-                
-                            <div class="activity-completion align-self-start ml-sm-2">
-                                    <div data-region="activity-information" data-activityname="Intensive Reading 1, Parts 2 and 3 (1 point)" class="activity-information">
-                                            <div data-region="completion-info">
-                                    
-                                                                    <button class="btn btn-success btn-sm text-nowrap" data-action="toggle-manual-completion" data-toggletype="manual:undo" data-cmid="4662178" data-activityname="Intensive Reading 1, Parts 2 and 3 (1 point)" data-withavailability="0" title="Intensive Reading 1, Parts 2 and 3 (1 point) は完了としてマークされます。元に戻すには押してください。" aria-label="Intensive Reading 1, Parts 2 and 3 (1 point) は完了としてマークされます。元に戻すには押してください。">
-                                                                        <i class="fa fa-check" aria-hidden="true"></i> 完了
-                                                                    </button>
-                                                            
-                                            </div>
-                                    </div>
-                            </div>
-                
-                
-                
-                
-                </div>
-                <div class="ct-activity-meta-container">
-                    <div class="ct-activity-mod-feedback">
-    <a href="https://wsdmoodle.waseda.jp/mod/assign/view.php?id=4662178"><i class="icon fa fa-comment-o fa-fw " title="フィードバック" role="img" aria-label="フィードバック"></i>フィードバックの確認</a>
-</div>
-                </div>
-        </div>
-            </li>
-            
-            
-            <li class="activity activity-wrapper resource modtype_resource  hasinfo " id="module-4718535" data-for="cmitem" data-id="4718535" data-indexed="true">
-        <div class="activity-item" data-activityname="AWL Self-check (for AR2)">
-                <div class="bulkselect d-none" data-for="cmBulkSelect">
-                    <input id="cmCheckbox4718535" type="checkbox" data-id="4718535" data-action="toggleSelectionCm" data-bulkcheckbox="1" disabled="disabled">
-                    <label class="sr-only" for="cmCheckbox4718535">
-                        活動 AWL Self-check (for AR2) を選択する
-                    </label>
-                </div>
-
-                <div class="activity-grid ">
-                
-                                            <div class="activity-icon activityiconcontainer smaller content  courseicon align-self-start mr-2">
-                                                <img src="%E3%82%B3%E3%83%BC%E3%82%B9_%20Academic%20Reading%202%E3%80%80%E6%9C%88%EF%BC%93%E3%82%B9%E3%82%BA%E3%82%AD%20_%20Waseda%20Moodle_files/pdf.svg" class="activityicon " data-region="activity-icon" data-id="4718535" alt="">
-                                            </div>
-                                
-                                    <div class="activity-name-area activity-instance d-flex flex-column mr-2">
-                                        <div class="activitytitle  modtype_resource position-relative align-self-start">
-                                            <div class="activityname">
-                                                            <a href="https://wsdmoodle.waseda.jp/mod/resource/view.php?id=4718535" class=" aalink stretched-link" onclick="">        <span class="instancename">AWL Self-check (for AR2) <span class="accesshide "> ファイル</span></span>    </a>
-                                                        
-                                                        <span class="ml-1">
-                                                            <span class="activitybadge badge rounded-pill ">
-                                                                    
-                                                            </span>
-                                                        </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                
-                
-                
-                
-                            <div class="activity-completion align-self-start ml-sm-2">
-                                    <div data-region="activity-information" data-activityname="AWL Self-check (for AR2)" class="activity-information">
-                                            <div data-region="completion-info">
-                                    
-                                                                    <button class="btn btn-outline-secondary btn-sm text-nowrap" data-action="toggle-manual-completion" data-toggletype="manual:mark-done" data-cmid="4718535" data-activityname="AWL Self-check (for AR2)" data-withavailability="0" title="AWL Self-check (for AR2) を完了マークする" aria-label="AWL Self-check (for AR2) を完了マークする">
-                                                                        完了マークする
-                                                                    </button>
-                                                            
-                                            </div>
-                                    </div>
-                            </div>
-                
-                
-                
-                
-                </div>
-        </div>
-            </li>
-</ul>
-        </div>
-    </div>
-    <div class="right side"><a title="「セクション 3」のみ表示する" class="cps_centre" href="https://wsdmoodle.waseda.jp/course/view.php?id=240902&amp;section=3"><span title="「セクション 3」のみ表示する" class="tcosif fa fa-dot-circle-o"></span></a></div>
-</li>
+</body>
+</html>
