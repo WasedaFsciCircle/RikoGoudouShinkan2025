@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ja" xml:lang="ja" class="yui3-js-enabled">
+<head>
+    <title>理工サークル合同新歓 - 早大防災教育支援会 WASEND</title>
+    
+    <!-- ファビコンとメタデータ -->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="理工サークル合同新歓, 早稲田大学, Swing, Jazz Club">
+    <meta name="robots" content="noindex">
+    
+    <!-- スタイルシート -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    
+    <!-- 外部JavaScriptファイル -->
+    <script src="../js/moodle-config.js"></script>
+    <script src="../js/navigation.js"></script>
+    
+    <!-- フォントアイコン -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- サイドパネル制御スクリプト -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleDrawerButtons = document.querySelectorAll('[data-toggler="drawers"]');
+        
+        toggleDrawerButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const drawerElement = document.getElementById(targetId);
+                
+                if (drawerElement) {
+                    // ドロワーの表示/非表示を切り替え
+                    if (drawerElement.getAttribute('aria-hidden') === 'true') {
+                        drawerElement.setAttribute('aria-hidden', 'false');
+                        drawerElement.classList.add('show');
+                    } else {
+                        drawerElement.setAttribute('aria-hidden', 'true');
+                        drawerElement.classList.remove('show');
+                    }
+                }
+            });
+        });
+
+        // 画面幅に応じてドロワーを閉じる
+        function handleResize() {
+            const drawers = document.querySelectorAll('[data-close-on-resize="1"]');
+            if (window.innerWidth >= 992) { // デスクトップサイズ
+                drawers.forEach(drawer => {
+                    drawer.setAttribute('aria-hidden', 'true');
+                    drawer.classList.remove('show');
+                });
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+        
+        // セクションの開閉処理
+        function setupToggle(toggleId, contentId) {
+            const toggleElement = document.getElementById(toggleId);
+            const contentElement = document.getElementById(contentId);
+            
+            toggleElement.addEventListener('click', function() {
+                if (contentElement.style.display === 'block') {
+                    contentElement.style.display = 'none';
+                    this.querySelector('.toggle-icon i').className = 'fa fa-chevron-right'; // 横向き矢印に変更
+                } else {
+                    contentElement.style.display = 'block';
+                    this.querySelector('.toggle-icon i').className = 'fa fa-chevron-up';
+                }
+            });
+        }
+        
+        // 3つのセクションに対して開閉機能を設定
+        setupToggle('toggle-section-1', 'section-content-1');
+        setupToggle('toggle-section-2', 'section-content-2');
+        setupToggle('toggle-section-3', 'section-content-3');
+        
+        // デフォルトですべてのセクションを開いておく
+        document.getElementById('section-content-1').style.display = 'block';
+        document.getElementById('toggle-section-1').querySelector('.toggle-icon i').className = 'fa fa-chevron-up';
+        
+        document.getElementById('section-content-2').style.display = 'block';
+        document.getElementById('toggle-section-2').querySelector('.toggle-icon i').className = 'fa fa-chevron-up';
+        
+        document.getElementById('section-content-3').style.display = 'block';
+        document.getElementById('toggle-section-3').querySelector('.toggle-icon i').className = 'fa fa-chevron-up';
+    });
+    </script>
+    
+    <style>
+        .toggle-section {
+            background-color: rgba(226, 226, 242, 1.0);
+            border-radius: 0.7em;
+            padding: 10px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        
+        .toggle-section h3 {
+            color: rgba(0, 0, 0, 1.0);
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .toggle-section:hover {
+            background-color: rgba(238, 238, 255, 1.0);
+        }
+        
+        .section-content {
+            display: none;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 0.7em;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .toggle-icon {
+            margin-right: 10px;
+            width: 20px;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .photo-item {
+            width: 48%;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .photo-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        @media (min-width: 768px) {
+            .photo-item {
+                width: 32%;
+            }
+        }
+        
+        .social-links {
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body id="page-my-index" class="limitedwidth format-site path-my gecko dir-ltr lang-ja yui-skin-sam yui3-skin-sam wsdmoodle-waseda-jp pagelayout-mydashboard course-1 context-4238777 theme uses-drawers jsenabled vsc-initialized local-learningtools">
+    <div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+    <div id="page-wrapper" class="d-print-block">
+
+        <nav class="navbar fixed-top navbar-light bg-white navbar-expand" aria-label="サイトナビゲーション">
+            <div class="container-fluid">
+                <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-primary">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">サイドパネル</span>
+                </button>
+        
+                <a href="../index.html" class="navbar-brand d-none d-md-flex align-items-center m-0 mr-4 p-0 aabtn">
+                        <img src="../images/home/RS.jpg" class="logo mr-1" alt="Riko Sinkan">
+                </a>
+                <div class="primary-navigation">
+                    <nav class="moremenu navigation observed">
+                        <ul id="moremenu-67d7612384920-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
+                            <li data-key="home" class="nav-item" role="none" data-forceintomoremenu="false">
+                                <a role="menuitem" class="nav-link" href="../index.html" data-disableactive="true">
+                                    Home
+                                </a>
+                            </li>
+                            <li data-key="myhome" class="nav-item" role="none" data-forceintomoremenu="false">
+                                <a role="menuitem" class="nav-link" href="../circle.html" aria-current="true" data-disableactive="true">
+                                    参加サークル紹介
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="usernavigation" class="navbar-nav ml-auto">
+                    <div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="155452" data-region="popover-region">
+                    </div>
+                    <div class="popover-region collapsed" data-region="popover-region-messages">
+                        <span class="sr-only sr-only-focusable" data-region="jumpto" tabindex="-1"></span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <span class="text-muted mr-2">You are currently using guest access</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="drawer drawer-left drawer-primary d-print-none" data-region="fixed-drawer" id="theme_boost-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1" aria-hidden="true">
+            <div class="drawerheader">
+                <button class="btn drawertoggle icon-no-margin" data-toggler="drawers" data-action="closedrawer" data-target="theme_boost-drawers-primary" data-toggle="tooltip" data-placement="right" title="ドロワを閉じる" data-aria-hidden-tab-index="" tabindex="-1">
+                    <i class="icon fa fa-times fa-fw" aria-hidden="true"></i>
+                </button>
+                <a href="../index.html">
+                    <img src="../images/home/RS.jpg" class="logo py-1" alt="Riko Sinkan">
+                </a>
+
+                <div class="drawerheadercontent hidden">
+                </div>
+            </div>
+            <div class="drawercontent drag-container" data-usertour="scroller">
+                <div class="list-group">
+                    <a href="../index.html" class="list-group-item list-group-item-action" data-aria-hidden-tab-index="" tabindex="-1">
+                        Home
+                    </a>
+                    <a href="../circle.html" class="list-group-item list-group-item-action active" aria-current="true" data-aria-hidden-tab-index="" tabindex="-1">
+                        参加サークル紹介
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers drag-container">
+            <div id="topofscroll" class="main-inner">
+                <div class="drawer-toggles d-flex">
+                </div>
+                <header id="page-header" class="header-maxwidth d-print-none">
+                    <div class="w-100">
+                        <div class="d-flex flex-wrap">
+                            <div class="ml-auto d-flex">
+                            </div>
+                            <div id="course-header">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="mr-auto">
+                                <div class="page-context-header d-flex align-items-center mb-2">
+                                    <div class="page-header-headings">
+                                        <h1 class="h2 mb-0">理工サークル合同新歓</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-actions-container ml-auto" data-region="header-actions-container">
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div id="page-content" class="pb-3 d-print-block">
+                    <div id="region-main-box">
+                        <section id="region-main" aria-label="コンテンツ">
+                            <span class="notifications" id="user-notifications"></span>
+                            <div role="main">
+                                <span id="maincontent"></span>
+                                <aside id="block-region-content" class="block-region" data-blockregion="content" data-droptarget="1">
+                                    <section id="inst13" class="block_calendar_upcoming block card mb-3" role="complementary" data-block="calendar_upcoming" data-instance-id="13" aria-labelledby="instance-13-header">
+                                        <div class="card-body p-3">
+                                            <h3 id="instance-13-header" class="h5 card-title d-inline">早大防災教育支援会 WASEND</h3>
+                                            <div class="card-text content mt-3">
+                                                <!-- サークル紹介セクション -->
+                                                <div class="toggle-section" id="toggle-section-1">
+                                                    <h3><span class="toggle-icon"><i class="fa fa-chevron-right"></i></span>サークル紹介</h3>
+                                                </div>
+                                                <div class="section-content" id="section-content-1">
+                                                    <p>WASENDでは小学校での防災授業やイベント出展などを通して、防災に関する知識の普及を目指しています。例年、被災地を巡る夏合宿や、フィリピンでの活動も行っています！</p>
+                                                </div>
+                                                
+                                                <!-- 紹介写真セクション -->
+                                                <div class="toggle-section" id="toggle-section-2">
+                                                    <h3><span class="toggle-icon"><i class="fa fa-chevron-right"></i></span>紹介写真</h3>
+                                                </div>
+                                                <div class="section-content" id="section-content-2">
+                                                    <div class="photo-gallery">
+                                                        <div class="photo-item">
+                                                            <img src="../images/サークル/早大防災教育支援会 WASEND/IMG_8692 - WASEND Bousai.jpeg" alt="早大防災教育支援会 WASEND 写真1">
+                                                        </div>
+                                                        <div class="photo-item">
+                                                            <img src="../images/サークル/早大防災教育支援会 WASEND/IMG_9108 - WASEND Bousai.jpeg" alt="早大防災教育支援会 WASEND 写真2">
+                                                        </div>
+                                                        <div class="photo-item">
+                                                            <img src="../images/サークル/早大防災教育支援会 WASEND/IMG_9109 - WASEND Bousai.jpeg" alt="早大防災教育支援会 WASEND 写真3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- 今後の新歓予定セクション -->
+                                                <div class="toggle-section" id="toggle-section-3">
+                                                    <h3><span class="toggle-icon"><i class="fa fa-chevron-right"></i></span>今後の新歓予定</h3>
+                                                </div>
+                                                <div class="section-content" id="section-content-3">
+                                                    <ul class="schedule-list">
+                                                        <li>3/28 14:30~(社工ガイダンス後) 履修登録相談会</li>
+                                                        <li>4/1 履修登録相談会&活動紹介・体験会</li>
+                                                        <li>4/14、4/28 活動紹介&体験会</li>
+                                                        <li>4/21(仮)ご飯会</li>
+                                                    </ul>
+                                                    <p>公式LINE(@999otgle)等、各種SNSで情報配信予定！！</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </aside>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
