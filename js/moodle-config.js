@@ -3,7 +3,7 @@ var M = {};
 M.yui = {};
 M.pageloadstarttime = new Date();
 M.cfg = {
-    "wwwroot":"https://wsdmoodle.waseda.jp",
+    "wwwroot":"https://wasedafscicircle.github.io/RikoGoudouShinkan2025/index.html",
     "homeurl":{},
     "sesskey":"Jl1ovKJsiS",
     "sessiontimeout":"14400",
