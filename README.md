@@ -1,1 +1,1 @@
-# RikoGoudouShinkan
+# [RikoGoudouShinkan] (https://wasedafscicircle.github.io/RikoGoudouShinkan2025/)
